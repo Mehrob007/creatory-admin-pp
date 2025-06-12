@@ -1,6 +1,7 @@
 import axios from "axios";
 
-const BUSE_URL = process.env.NEXT_PUBLIC_API_URL;
+const BUSE_URL =
+  process.env.NEXT_PUBLIC_API_URL || "http://176.124.222.203:3010/";
 
 export const apiClient = axios.create({
   baseURL: BUSE_URL,
