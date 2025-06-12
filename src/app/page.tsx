@@ -7,10 +7,6 @@ import { apiClient } from "@/utils/apiClient";
 // import { apiClient } from "@/utils/apiClient";
 import React, { useEffect, useState } from "react";
 
-const ValidData = {
-  login: { required: true },
-  password: { required: true, minLength: 4 },
-};
 // interface ArrData {
 //   [key: string]: string;
 // }
@@ -302,7 +298,7 @@ const defDataARR = [
 ];
 
 export default function Home() {
-  const { data, errors, setData, validate } = useFormStore();
+  const { data, errors, setData } = useFormStore();
   const [loading, setLoading] = useState<boolean>(false);
 
   const [selection, setSelection] = useState<number>(1);
@@ -334,7 +330,7 @@ export default function Home() {
   }
 
   const onSend = () => {
-    const formValid = validate(ValidData);
+    // const formValid = validate(ValidData);
 
     // if (formValid) {
     // const arrData: ArrData[] =
