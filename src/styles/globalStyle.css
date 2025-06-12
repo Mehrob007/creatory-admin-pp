@@ -1,0 +1,362 @@
+body {
+  background-color: #0f0f0f;
+  color: #ffffff;
+}
+
+button {
+  background: #4c4c4c;
+  color: rgba(255, 255, 255, 0.2);
+  border: none;
+  padding: 20px 30px;
+  border-radius: 10px;
+  width: 100%;
+  font-family: Mansfield;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.active-button {
+  background: #59e991;
+  color: #000000;
+}
+
+.textarea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 99.5%;
+}
+.textarea > label {
+  font-family: Mansfield;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #59e991;
+}
+.textarea > textarea {
+  height: auto;
+  width: 100%;
+  border: 2px solid #0f0f0f;
+  border-radius: 10px;
+  background-color: transparent;
+  color: #ffffff;
+  outline: none;
+  padding: 17px 20px;
+  text-align: center;
+}
+
+.InputPages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.InputPages > label {
+  font-family: Mansfield;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #59e991;
+}
+.InputPages > input {
+  width: 100%;
+  height: auto;
+  border: 2px solid #0f0f0f;
+  border-radius: 10px;
+  background-color: transparent;
+  color: #ffffff;
+  outline: none;
+  padding: 17px 0;
+  text-align: center;
+  overflow: hidden;
+  resize: none;
+}
+
+.input {
+  min-width: 297px;
+  min-height: 70px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.input > label {
+  position: absolute;
+  background-color: #0f0f0f;
+  left: 10px;
+  top: -12px;
+  padding: 4px 5px;
+  font-family: Mansfield;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  z-index: 1;
+}
+.input > div {
+  width: 100%;
+  position: relative;
+}
+.input > div > input {
+  background-color: transparent;
+  max-width: 100%;
+  width: 95.5%;
+  outline: none;
+  color: #ffffff;
+  padding: 13px 0 12px 10px;
+  font-family: Mansfield;
+  font-weight: 300;
+  font-size: 18px;
+  border: 2px solid #4c4c4c;
+  border-radius: 10px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  transition: all 0.2s ease-in;
+}
+.input > div > input:focus {
+  border: 2px solid #59e991;
+}
+.input > div > img {
+  position: absolute;
+  right: 16px;
+  top: 13px;
+  cursor: pointer;
+}
+.input > div > .error-input {
+  border-color: #ef4444;
+}
+.input > p {
+  font-family: Mansfield;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #ef4444;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+.login > .logo-creatory {
+  position: absolute;
+  bottom: 44px;
+}
+.login > .login-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+}
+.login > .login-content > .login-content-header {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.login > .login-content > .login-content-header > h1 {
+  font-family: Mansfield;
+  font-weight: 300;
+  font-size: 55px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #59e991;
+}
+.login > .login-content > .login-content-header > h3 {
+  font-family: Mansfield;
+  font-weight: 300;
+  font-size: 26;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.login > .login-content > .login-content-form {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.login > .login-content > .login-content-form > div {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.component-pages {
+  background-color: #212121;
+  grid-template-columns: 260px 1fr;
+  display: grid;
+}
+
+.component {
+  min-height: 100vh;
+}
+
+.left-menu {
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0f0f0f;
+}
+.left-menu > .left-menu-content {
+  display: flex;
+  flex-direction: column;
+  gap: 49px;
+  width: 100%;
+}
+.left-menu > .left-menu-content > h1 {
+  font-family: Mansfield;
+  font-weight: 300;
+  font-size: 25.8px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.left-menu > .left-menu-content > h1 > span {
+  color: #59e991;
+}
+.left-menu > .left-menu-content > nav {
+  display: flex;
+  flex-direction: column;
+}
+.left-menu > .left-menu-content > nav > a {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Mansfield;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.3s ease-in;
+}
+.left-menu > .left-menu-content > nav > a:hover {
+  background: #59e991;
+  color: #000000;
+}
+
+.home {
+  display: grid;
+  grid-template-columns: 1fr 132px;
+  gap: 30px;
+  padding: 51px 30px 0;
+  max-width: 938px;
+  width: 100%;
+  position: relative;
+}
+.home > .home-content {
+  max-width: 938px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.home > .home-content > div > main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  justify-content: center;
+}
+.home > .home-content > div > main > div > div {
+  width: 100%;
+}
+.home > .home-content > div > footer {
+  display: flex;
+  gap: 10px;
+  width: 104%;
+  margin-left: -2%;
+}
+.home > .home-content > div > footer > div {
+  flex: 1;
+  width: 100%;
+}
+.home > .home-content > div > footer > div > textarea {
+  padding: 17px 0;
+}
+.home > .button-save {
+  position: sticky;
+  right: 0px;
+  top: 0;
+  width: 132px;
+  height: 132px;
+  border-radius: 20px;
+  padding: 17.5px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  background-color: #0f0f0f;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+.home > .button-save:hover {
+  background-color: #59e991;
+  color: #0f0f0f;
+}
+.home > .button-save:hover > div {
+  background: url("../../public/icons/icon-save-black.svg") center/cover no-repeat;
+}
+.home > .button-save > div {
+  background: url("../../public/icons/icon-save.svg") center/cover no-repeat;
+  width: 42px;
+  min-height: 41px;
+}
+.home > .button-save > h1 {
+  font-family: Mansfield;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 110%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.home > .button-save-active {
+  background-color: #59e991;
+  color: #0f0f0f;
+}
+.home > .button-save-active > div {
+  background: url("../../public/icons/icon-save-black.svg") center/cover no-repeat;
+}
+.home > .button-save-active > main {
+  letter-spacing: 0%;
+  text-align: center;
+  font-family: Mansfield;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 110%;
+  position: relative;
+}
+.home > .button-save-active > main::after {
+  content: "";
+  position: absolute;
+  animation: loading_anim 1.5s linear infinite;
+}
+@keyframes loading_anim {
+  0% {
+    content: ".";
+  }
+  50% {
+    content: "..";
+  }
+  90% {
+    content: "...";
+  }
+}/*# sourceMappingURL=globalStyle.css.map */
