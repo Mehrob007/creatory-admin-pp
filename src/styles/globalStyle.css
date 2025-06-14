@@ -10,7 +10,7 @@ button {
   padding: 20px 30px;
   border-radius: 10px;
   width: 100%;
-  font-family: Mansfield;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 18px;
   line-height: 100%;
@@ -27,10 +27,10 @@ button {
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  width: 99.5%;
+  width: 100%;
 }
 .textarea > label {
-  font-family: Mansfield;
+  font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-size: 18px;
   line-height: 100%;
@@ -38,6 +38,8 @@ button {
   color: #59e991;
 }
 .textarea > textarea {
+  box-sizing: border-box;
+  vertical-align: top;
   height: auto;
   width: 100%;
   border: 2px solid #0f0f0f;
@@ -45,8 +47,12 @@ button {
   background-color: transparent;
   color: #ffffff;
   outline: none;
-  padding: 17px 20px;
+  padding: 12px 20px;
+  padding-bottom: 20px;
   text-align: center;
+  resize: none;
+  overflow: hidden;
+  font-family: "Montserrat", sans-serif;
 }
 
 .InputPages {
@@ -56,7 +62,7 @@ button {
   gap: 10px;
 }
 .InputPages > label {
-  font-family: Mansfield;
+  font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-size: 18px;
   line-height: 100%;
@@ -91,7 +97,7 @@ button {
   left: 10px;
   top: -12px;
   padding: 4px 5px;
-  font-family: Mansfield;
+  font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-size: 14px;
   line-height: 100%;
@@ -109,7 +115,7 @@ button {
   outline: none;
   color: #ffffff;
   padding: 13px 0 12px 10px;
-  font-family: Mansfield;
+  font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-size: 18px;
   border: 2px solid #4c4c4c;
@@ -131,7 +137,7 @@ button {
   border-color: #ef4444;
 }
 .input > p {
-  font-family: Mansfield;
+  font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-size: 14px;
   line-height: 100%;
@@ -164,7 +170,7 @@ button {
   gap: 30px;
 }
 .login > .login-content > .login-content-header > h1 {
-  font-family: Mansfield;
+  font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-size: 55px;
   line-height: 100%;
@@ -172,7 +178,7 @@ button {
   color: #59e991;
 }
 .login > .login-content > .login-content-header > h3 {
-  font-family: Mansfield;
+  font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-size: 26;
   line-height: 100%;
@@ -201,13 +207,26 @@ button {
   min-height: 100vh;
 }
 
+.left-menu-div {
+  height: 100vh;
+  position: fixed;
+  background-color: #0f0f0f;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.left-menu-div > img {
+  padding: 50px 0;
+}
+
 .left-menu {
   padding: 50px 0;
-  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  background-color: #0f0f0f;
+  display: flex;
+  width: 260px;
 }
 .left-menu > .left-menu-content {
   display: flex;
@@ -216,7 +235,7 @@ button {
   width: 100%;
 }
 .left-menu > .left-menu-content > h1 {
-  font-family: Mansfield;
+  font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-size: 25.8px;
   line-height: 120%;
@@ -236,7 +255,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: Mansfield;
+  font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-size: 18px;
   line-height: 100%;
@@ -255,7 +274,7 @@ button {
   display: grid;
   grid-template-columns: 1fr 132px;
   gap: 30px;
-  padding: 51px 30px 0;
+  margin: 51px 30px;
   max-width: 938px;
   width: 100%;
   position: relative;
@@ -270,7 +289,7 @@ button {
 .home > .home-content > div > main {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 60px;
+  gap: 10px;
   align-items: center;
   justify-content: center;
 }
@@ -280,8 +299,7 @@ button {
 .home > .home-content > div > footer {
   display: flex;
   gap: 10px;
-  width: 104%;
-  margin-left: -2%;
+  width: 100%;
 }
 .home > .home-content > div > footer > div {
   flex: 1;
@@ -321,7 +339,7 @@ button {
   min-height: 41px;
 }
 .home > .button-save > h1 {
-  font-family: Mansfield;
+  font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-size: 18px;
   line-height: 110%;
@@ -338,7 +356,7 @@ button {
 .home > .button-save-active > main {
   letter-spacing: 0%;
   text-align: center;
-  font-family: Mansfield;
+  font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-weight: 300;
   line-height: 110%;

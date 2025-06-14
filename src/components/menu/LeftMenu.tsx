@@ -1,7 +1,6 @@
 import React from "react";
 import { navBar } from "./menu";
 import Link from "next/link";
-import Image from "next/image";
 
 export default function LeftMenu() {
   return (
@@ -19,12 +18,7 @@ export default function LeftMenu() {
           ))}
         </nav>
       </div>
-      <Image
-        src="/icons/logo-creatory.svg"
-        alt="logo-creatory"
-        width={194}
-        height={52.96}
-      />
+     
     </div>
   );
 }

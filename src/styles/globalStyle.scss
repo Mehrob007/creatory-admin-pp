@@ -17,7 +17,7 @@ button {
   padding: 20px 30px;
   border-radius: 10px;
   width: 100%;
-  font-family: Mansfield;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 18px;
   line-height: 100%;
@@ -32,9 +32,9 @@ button {
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  width: 99.5%;
+  width: 100%;
   & > label {
-    font-family: Mansfield;
+    font-family: "Montserrat", sans-serif;
     font-weight: 300;
     font-size: 18px;
     line-height: 100%;
@@ -42,16 +42,22 @@ button {
     color: $admin-color;
   }
   & > textarea {
-    height: auto;
+    box-sizing: border-box;
+    vertical-align: top;
+    height: auto ;
     width: 100%;
     border: 2px solid $background-color;
     border-radius: 10px;
     background-color: transparent;
     color: $text-color;
     outline: none;
-    padding: 17px 20px;
-    // padding-bottom: 0;
+    padding: 12px 20px;
+    // line-height: 1;
+    padding-bottom: 20px;
     text-align: center;
+    resize: none;
+    overflow: hidden;
+    font-family: "Montserrat", sans-serif;
     // overflow: hidden;
     // resize: none;
     // line-height: 50px;
@@ -66,7 +72,7 @@ button {
   align-items: center;
   gap: 10px;
   & > label {
-    font-family: Mansfield;
+    font-family: "Montserrat", sans-serif;
     font-weight: 300;
     font-size: 18px;
     line-height: 100%;
@@ -107,7 +113,7 @@ button {
     left: 10px;
     top: -12px;
     padding: 4px 5px;
-    font-family: Mansfield;
+    font-family: "Montserrat", sans-serif;
     font-weight: 300;
     font-size: 14px;
 
@@ -126,7 +132,7 @@ button {
       color: $text-color;
       // height: 50px;
       padding: 13px 0 12px 10px;
-      font-family: Mansfield;
+      font-family: "Montserrat", sans-serif;
       font-weight: 300;
       font-size: 18px;
       border: 2px solid #4c4c4c;
@@ -149,7 +155,7 @@ button {
     }
   }
   & > p {
-    font-family: Mansfield;
+    font-family: "Montserrat", sans-serif;
     font-weight: 300;
     font-size: 14px;
 
@@ -181,7 +187,7 @@ button {
       flex-direction: column;
       gap: 30px;
       & > h1 {
-        font-family: Mansfield;
+        font-family: "Montserrat", sans-serif;
         font-weight: 300;
         font-size: 55px;
 
@@ -190,7 +196,7 @@ button {
         color: #59e991;
       }
       & > h3 {
-        font-family: Mansfield;
+        font-family: "Montserrat", sans-serif;
         font-weight: 300;
         font-size: 26;
 
@@ -220,13 +226,27 @@ button {
 .component {
   min-height: 100vh;
 }
+.left-menu-div {
+  height: 100vh;
+  position: fixed;
+  background-color: $background-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  & > img {
+    padding: 50px 0;
+  }
+}
 .left-menu {
   padding: 50px 0;
-  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  background-color: $background-color;
+  display: flex;
+  width: 260px;
+  // height: 100%;
+  // height: 100vh;
 
   & > .left-menu-content {
     display: flex;
@@ -234,7 +254,7 @@ button {
     gap: 49px;
     width: 100%;
     & > h1 {
-      font-family: Mansfield;
+      font-family: "Montserrat", sans-serif;
       font-weight: 300;
       font-size: 25.8px;
       line-height: 120%;
@@ -254,7 +274,7 @@ button {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-family: Mansfield;
+        font-family: "Montserrat", sans-serif;
         font-weight: 300;
         font-size: 18px;
         line-height: 100%;
@@ -275,7 +295,8 @@ button {
   display: grid;
   grid-template-columns: 1fr 132px;
   gap: 30px;
-  padding: 51px 30px 0;
+  // padding: 51px 30px 0;
+  margin: 51px 30px;
   max-width: 938px;
   width: 100%;
   position: relative;
@@ -289,11 +310,11 @@ button {
       & > main {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 60px;
+        gap: 10px;
         align-items: center;
         justify-content: center;
-        & > div{
-          & > div{
+        & > div {
+          & > div {
             width: 100%;
           }
         }
@@ -301,13 +322,13 @@ button {
       & > footer {
         display: flex;
         gap: 10px;
-        width: 104%;
-        margin-left: -2%;
+        width: 100%;
+        // margin-left: -2%;
         & > div {
           flex: 1;
           width: 100%;
-          & > textarea{
-            padding: 17px 0 ;
+          & > textarea {
+            padding: 17px 0;
           }
         }
       }
@@ -346,7 +367,7 @@ button {
       min-height: 41px;
     }
     & > h1 {
-      font-family: Mansfield;
+      font-family: "Montserrat", sans-serif;
       font-weight: 300;
       font-size: 18px;
       line-height: 110%;
@@ -364,7 +385,7 @@ button {
     & > main {
       letter-spacing: 0%;
       text-align: center;
-      font-family: Mansfield;
+      font-family: "Montserrat", sans-serif;
       font-size: 18px;
       font-weight: 300;
       line-height: 110%;

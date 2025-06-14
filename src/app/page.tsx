@@ -480,7 +480,7 @@ export default function Home() {
             onChange={(e) => setData("box1_content_1", e)}
             errors={errors}
             title="Главный баннер"
-            styleText={{ fontSize: "28px", height: "33px" }}
+            styleText={{ fontSize: "28px", height: "60px" }}
           />
           <Textarea
             id="box1_content_2"
@@ -488,7 +488,7 @@ export default function Home() {
             onChange={(e) => setData("box1_content_2", e)}
             errors={errors}
             // title="Главный баннер"
-            styleText={{ fontSize: "18px", height: "23px" }}
+            styleText={{ fontSize: "18px", height: "50px" }}
           />
         </div>
         <div>
@@ -498,7 +498,7 @@ export default function Home() {
             onChange={(e) => setData("box2_content_1", e)}
             errors={errors}
             title="Блок №1"
-            styleText={{ fontSize: "28px", height: "33px" }}
+            styleText={{ fontSize: "28px", height: "60px" }}
           />
           <Textarea
             id="box2_content_2"
@@ -506,7 +506,7 @@ export default function Home() {
             onChange={(e) => setData("box2_content_2", e)}
             errors={errors}
             // title="Главный баннер"
-            styleText={{ fontSize: "14px", height: "57px" }}
+            styleText={{ fontSize: "14px", height: "47px" }}
           />
         </div>
         <div>
@@ -516,7 +516,7 @@ export default function Home() {
             onChange={(e) => setData("box3_content_1", e)}
             errors={errors}
             title="Блок №2"
-            styleText={{ fontSize: "28px", height: "33px" }}
+            styleText={{ fontSize: "28px", height: "60px" }}
           />
           <Textarea
             id="box3_content_2"
@@ -524,7 +524,7 @@ export default function Home() {
             onChange={(e) => setData("box3_content_2", e)}
             errors={errors}
             // title="Главный баннер"
-            styleText={{ fontSize: "18px", height: "23px" }}
+            styleText={{ fontSize: "18px", height: "50px" }}
           />
           <Textarea
             id="box3_content_3"
@@ -532,7 +532,7 @@ export default function Home() {
             onChange={(e) => setData("box3_content_3", e)}
             errors={errors}
             // title="Главный баннер"
-            styleText={{ fontSize: "14px", height: "76px" }}
+            styleText={{ fontSize: "14px", height: "47px" }}
           />
           <Textarea
             id="box3_content_4"
@@ -540,7 +540,7 @@ export default function Home() {
             onChange={(e) => setData("box3_content_4", e)}
             errors={errors}
             // title="Главный баннер"
-            styleText={{ fontSize: "18px", height: "23px" }}
+            styleText={{ fontSize: "18px", height: "50px" }}
           />
           <Textarea
             id="box3_content_5"
@@ -548,7 +548,7 @@ export default function Home() {
             onChange={(e) => setData("box3_content_5", e)}
             errors={errors}
             // title="Главный баннер"
-            styleText={{ fontSize: "14px", height: "76px" }}
+            styleText={{ fontSize: "14px", height: "47px" }}
           />
           <Textarea
             id="box3_content_6"
@@ -556,7 +556,7 @@ export default function Home() {
             onChange={(e) => setData("box3_content_6", e)}
             errors={errors}
             // title="Главный баннер"
-            styleText={{ fontSize: "18px", height: "23px" }}
+            styleText={{ fontSize: "18px", height: "50px" }}
           />
           <Textarea
             id="box3_content_7"
@@ -564,7 +564,7 @@ export default function Home() {
             onChange={(e) => setData("box3_content_7", e)}
             errors={errors}
             // title="Главный баннер"
-            styleText={{ fontSize: "14px", height: "76px" }}
+            styleText={{ fontSize: "14px", height: "47px" }}
           />
         </div>
         <div>
@@ -574,7 +574,7 @@ export default function Home() {
             onChange={(e) => setData("box4_content_1", e)}
             errors={errors}
             title="Блок №3"
-            styleText={{ fontSize: "28px", height: "33px" }}
+            styleText={{ fontSize: "28px", height: "60px" }}
           />
           <Textarea
             id="box4_content_2"
@@ -582,7 +582,7 @@ export default function Home() {
             onChange={(e) => setData("box4_content_2", e)}
             errors={errors}
             // title="Главный баннер"
-            styleText={{ fontSize: "18px", height: "23px" }}
+            styleText={{ fontSize: "18px", height: "50px" }}
           />
           <Textarea
             id="box4_content_3"
@@ -590,7 +590,7 @@ export default function Home() {
             onChange={(e) => setData("box4_content_3", e)}
             errors={errors}
             // title="Главный баннер"
-            styleText={{ fontSize: "18px", height: "23px" }}
+            styleText={{ fontSize: "18px", height: "50px" }}
           />
           <Textarea
             id="box4_content_4"
@@ -598,7 +598,7 @@ export default function Home() {
             onChange={(e) => setData("box4_content_4", e)}
             errors={errors}
             // title="Главный баннер"
-            styleText={{ fontSize: "18px", height: "23px" }}
+            styleText={{ fontSize: "18px", height: "50px" }}
           />
           <Textarea
             id="box4_content_5"
@@ -606,7 +606,7 @@ export default function Home() {
             onChange={(e) => setData("box4_content_5", e)}
             errors={errors}
             // title="Главный баннер"
-            styleText={{ fontSize: "14px", height: "33px" }}
+            styleText={{ fontSize: "14px", height: "47px" }}
           />
           <main>
             <div>
@@ -616,7 +616,7 @@ export default function Home() {
                 onChange={(e) => setData("box4_content_6", e)}
                 errors={errors}
                 // title="Главный баннер"
-                styleText={{ fontSize: "14px", height: "33px" }}
+                styleText={{ fontSize: "14px", height: "47px" }}
               />
               <Textarea
                 id="box4_content_7"
@@ -624,7 +624,7 @@ export default function Home() {
                 onChange={(e) => setData("box4_content_7", e)}
                 errors={errors}
                 // title="Главный баннер"
-                styleText={{ fontSize: "18px", height: "23px" }}
+                styleText={{ fontSize: "18px", height: "50px" }}
               />
               <Textarea
                 id="box4_content_8"
@@ -632,7 +632,7 @@ export default function Home() {
                 onChange={(e) => setData("box4_content_8", e)}
                 errors={errors}
                 // title="Главный баннер"
-                styleText={{ fontSize: "28px", height: "33px" }}
+                styleText={{ fontSize: "28px", height: "60px" }}
               />
               <Textarea
                 id="box4_content_9"
@@ -640,7 +640,7 @@ export default function Home() {
                 onChange={(e) => setData("box4_content_9", e)}
                 errors={errors}
                 // title="Главный баннер"
-                styleText={{ fontSize: "14px", height: "53px" }}
+                styleText={{ fontSize: "14px", height: "47px" }}
               />
             </div>
             <div>
@@ -650,7 +650,7 @@ export default function Home() {
                 onChange={(e) => setData("box4_content_10", e)}
                 errors={errors}
                 // title="Главный баннер"
-                styleText={{ fontSize: "14px", height: "33px" }}
+                styleText={{ fontSize: "14px", height: "47px" }}
               />
               <Textarea
                 id="box4_content_11"
@@ -658,7 +658,7 @@ export default function Home() {
                 onChange={(e) => setData("box4_content_11", e)}
                 errors={errors}
                 // title="Главный баннер"
-                styleText={{ fontSize: "18px", height: "23px" }}
+                styleText={{ fontSize: "18px", height: "50px" }}
               />
               <Textarea
                 id="box4_content_12"
@@ -666,7 +666,7 @@ export default function Home() {
                 onChange={(e) => setData("box4_content_12", e)}
                 errors={errors}
                 // title="Главный баннер"
-                styleText={{ fontSize: "28px", height: "33px" }}
+                styleText={{ fontSize: "28px", height: "60px" }}
               />
               <Textarea
                 id="box4_content_13"
@@ -674,7 +674,7 @@ export default function Home() {
                 onChange={(e) => setData("box4_content_13", e)}
                 errors={errors}
                 // title="Главный баннер"
-                styleText={{ fontSize: "14px", height: "53px" }}
+                styleText={{ fontSize: "14px", height: "47px" }}
               />
             </div>
           </main>
@@ -686,7 +686,7 @@ export default function Home() {
                 onChange={(e) => setData("box4_content_14", e)}
                 errors={errors}
                 // title="Главный баннер"
-                styleText={{ fontSize: "14px", height: "33px" }}
+                styleText={{ fontSize: "14px", height: "47px" }}
               />
               <Textarea
                 id="box4_content_15"
@@ -694,7 +694,7 @@ export default function Home() {
                 onChange={(e) => setData("box4_content_15", e)}
                 errors={errors}
                 // title="Главный баннер"
-                styleText={{ fontSize: "18px", height: "23px" }}
+                styleText={{ fontSize: "18px", height: "50px" }}
               />
               <Textarea
                 id="box4_content_16"
@@ -702,7 +702,7 @@ export default function Home() {
                 onChange={(e) => setData("box4_content_16", e)}
                 errors={errors}
                 // title="Главный баннер"
-                styleText={{ fontSize: "28px", height: "33px" }}
+                styleText={{ fontSize: "28px", height: "60px" }}
               />
               <Textarea
                 id="box4_content_17"
@@ -710,7 +710,7 @@ export default function Home() {
                 onChange={(e) => setData("box4_content_17", e)}
                 errors={errors}
                 // title="Главный баннер"
-                styleText={{ fontSize: "14px", height: "53px" }}
+                styleText={{ fontSize: "14px", height: "47px" }}
               />
             </div>
             <div>
@@ -720,7 +720,7 @@ export default function Home() {
                 onChange={(e) => setData("box4_content_18", e)}
                 errors={errors}
                 // title="Главный баннер"
-                styleText={{ fontSize: "14px", height: "33px" }}
+                styleText={{ fontSize: "14px", height: "47px" }}
               />
               <Textarea
                 id="box4_content_19"
@@ -728,7 +728,7 @@ export default function Home() {
                 onChange={(e) => setData("box4_content_19", e)}
                 errors={errors}
                 // title="Главный баннер"
-                styleText={{ fontSize: "18px", height: "23px" }}
+                styleText={{ fontSize: "18px", height: "50px" }}
               />
               <Textarea
                 id="box4_content_20"
@@ -736,7 +736,7 @@ export default function Home() {
                 onChange={(e) => setData("box4_content_20", e)}
                 errors={errors}
                 // title="Главный баннер"
-                styleText={{ fontSize: "28px", height: "33px" }}
+                styleText={{ fontSize: "28px", height: "60px" }}
               />
               <Textarea
                 id="box4_content_21"
@@ -744,7 +744,7 @@ export default function Home() {
                 onChange={(e) => setData("box4_content_21", e)}
                 errors={errors}
                 // title="Главный баннер"
-                styleText={{ fontSize: "14px", height: "53px" }}
+                styleText={{ fontSize: "14px", height: "47px" }}
               />
             </div>
           </main>
@@ -754,14 +754,14 @@ export default function Home() {
             onChange={(e) => setData("box4_content_22", e)}
             errors={errors}
             // title="Блок №3"
-            styleText={{ fontSize: "28px", height: "33px" }}
+            styleText={{ fontSize: "28px", height: "60px" }}
           />
           <Textarea
             id="box4_content_23"
             value={data.box4_content_23 as string}
             onChange={(e) => setData("box4_content_23", e)}
             errors={errors}
-            styleText={{ fontSize: "14px", height: "53px" }}
+            styleText={{ fontSize: "14px", height: "47px" }}
           />
           <main>
             <div>
@@ -771,7 +771,7 @@ export default function Home() {
                 onChange={(e) => setData("box4_content_24", e)}
                 errors={errors}
                 // title="Главный баннер"
-                styleText={{ fontSize: "18px", height: "23px" }}
+                styleText={{ fontSize: "18px", height: "50px" }}
               />
               <Textarea
                 id="box4_content_25"
@@ -779,7 +779,7 @@ export default function Home() {
                 onChange={(e) => setData("box4_content_25", e)}
                 errors={errors}
                 // title="Главный баннер"
-                styleText={{ fontSize: "28px", height: "33px" }}
+                styleText={{ fontSize: "28px", height: "60px" }}
               />
               <Textarea
                 id="box4_content_28"
@@ -787,7 +787,7 @@ export default function Home() {
                 onChange={(e) => setData("box4_content_28", e)}
                 errors={errors}
                 // title="Главный баннер"
-                styleText={{ fontSize: "14px", height: "43px" }}
+                styleText={{ fontSize: "14px", height: "47px" }}
               />
             </div>
             <div>
@@ -797,7 +797,7 @@ export default function Home() {
                 onChange={(e) => setData("box4_content_27", e)}
                 errors={errors}
                 // title="Главный баннер"
-                styleText={{ fontSize: "18px", height: "23px" }}
+                styleText={{ fontSize: "18px", height: "50px" }}
               />
               <Textarea
                 id="box4_content_29"
@@ -805,7 +805,7 @@ export default function Home() {
                 onChange={(e) => setData("box4_content_29", e)}
                 errors={errors}
                 // title="Главный баннер"
-                styleText={{ fontSize: "28px", height: "33px" }}
+                styleText={{ fontSize: "28px", height: "60px" }}
               />
               <Textarea
                 id="box4_content_30"
@@ -813,7 +813,7 @@ export default function Home() {
                 onChange={(e) => setData("box4_content_30", e)}
                 errors={errors}
                 // title="Главный баннер"
-                styleText={{ fontSize: "14px", height: "43px" }}
+                styleText={{ fontSize: "14px", height: "47px" }}
               />
             </div>
           </main>
@@ -824,7 +824,7 @@ export default function Home() {
               onChange={(e) => setData("box4_content_31", e)}
               errors={errors}
               // title="Главный баннер"
-              styleText={{ fontSize: "14px", height: "43px" }}
+              styleText={{ fontSize: "14px", height: "47px" }}
             />
             <Textarea
               id="box4_content_32"
@@ -832,7 +832,7 @@ export default function Home() {
               onChange={(e) => setData("box4_content_32", e)}
               errors={errors}
               // title="Главный баннер"
-              styleText={{ fontSize: "14px", height: "43px" }}
+              styleText={{ fontSize: "14px", height: "47px" }}
             />
             <Textarea
               id="box4_content_33"
@@ -840,7 +840,7 @@ export default function Home() {
               onChange={(e) => setData("box4_content_33", e)}
               errors={errors}
               // title="Главный баннер"
-              styleText={{ fontSize: "14px", height: "43px" }}
+              styleText={{ fontSize: "14px", height: "47px" }}
             />
             <Textarea
               id="box4_content_34"
@@ -848,7 +848,7 @@ export default function Home() {
               onChange={(e) => setData("box4_content_34", e)}
               errors={errors}
               // title="Главный баннер"
-              styleText={{ fontSize: "14px", height: "43px" }}
+              styleText={{ fontSize: "14px", height: "47px" }}
             />
           </footer>
           <Textarea
@@ -856,21 +856,21 @@ export default function Home() {
             value={data.box4_content_35 as string}
             onChange={(e) => setData("box4_content_35", e)}
             errors={errors}
-            styleText={{ fontSize: "14px", height: "53px" }}
+            styleText={{ fontSize: "14px", height: "47px" }}
           />
           <Textarea
             id="box4_content_36"
             value={data.box4_content_36 as string}
             onChange={(e) => setData("box4_content_36", e)}
             errors={errors}
-            styleText={{ fontSize: "28px", height: "43px" }}
+            styleText={{ fontSize: "28px", height: "60px" }}
           />
           <Textarea
             id="box4_content_37"
             value={data.box4_content_37 as string}
             onChange={(e) => setData("box4_content_37", e)}
             errors={errors}
-            styleText={{ fontSize: "18px", height: "23px" }}
+            styleText={{ fontSize: "18px", height: "50px" }}
           />
           <nav>
             <Textarea
@@ -878,7 +878,7 @@ export default function Home() {
               value={data.list_1_title as string}
               onChange={(e) => setData("list_1_title", e)}
               errors={errors}
-              styleText={{ fontSize: "28px", height: "43px" }}
+              styleText={{ fontSize: "28px", height: "60px" }}
             />
             <Textarea
               id="list_1_content"
@@ -886,8 +886,8 @@ export default function Home() {
               onChange={(e) => setData("list_1_content", e)}
               errors={errors}
               styleText={{
-                fontSize: "18px",
-                height: "23px",
+                fontSize: "14px",
+                height: "47px",
                 textAlign: "start",
               }}
               listMode={true}
@@ -899,7 +899,7 @@ export default function Home() {
               value={data.list_2_title as string}
               onChange={(e) => setData("list_2_title", e)}
               errors={errors}
-              styleText={{ fontSize: "28px", height: "43px" }}
+              styleText={{ fontSize: "28px", height: "60px" }}
             />
             <Textarea
               id="list_2_content"
@@ -907,8 +907,8 @@ export default function Home() {
               onChange={(e) => setData("list_2_content", e)}
               errors={errors}
               styleText={{
-                fontSize: "18px",
-                height: "23px",
+                fontSize: "14px",
+                height: "47px",
                 textAlign: "start",
               }}
               listMode={true}
@@ -920,7 +920,7 @@ export default function Home() {
               value={data.list_3_title as string}
               onChange={(e) => setData("list_3_title", e)}
               errors={errors}
-              styleText={{ fontSize: "28px", height: "43px" }}
+              styleText={{ fontSize: "28px", height: "60px" }}
             />
             <Textarea
               id="list_3_content"
@@ -928,8 +928,8 @@ export default function Home() {
               onChange={(e) => setData("list_3_content", e)}
               errors={errors}
               styleText={{
-                fontSize: "18px",
-                height: "23px",
+                fontSize: "14px",
+                height: "47px",
                 textAlign: "start",
               }}
               listMode={true}
@@ -943,7 +943,7 @@ export default function Home() {
             onChange={(e) => setData("box4_1_content_1", e)}
             errors={errors}
             title="Блок №4"
-            styleText={{ fontSize: "28px", height: "33px" }}
+            styleText={{ fontSize: "28px", height: "60px" }}
           />
           <Textarea
             id="box4_1_content_2"
@@ -951,14 +951,14 @@ export default function Home() {
             onChange={(e) => setData("box4_1_content_2", e)}
             errors={errors}
             // title="Блок №3"
-            styleText={{ fontSize: "28px", height: "33px" }}
+            styleText={{ fontSize: "28px", height: "60px" }}
           />
           <Textarea
             id="box4_1_content_3"
             value={data.box4_1_content_3 as string}
             onChange={(e) => setData("box4_1_content_3", e)}
             errors={errors}
-            styleText={{ fontSize: "14px", height: "53px" }}
+            styleText={{ fontSize: "14px", height: "47px" }}
           />
           <Textarea
             id="box4_1_content_1_1"
@@ -966,7 +966,7 @@ export default function Home() {
             onChange={(e) => setData("box4_1_content_1_1", e)}
             errors={errors}
             // title="Блок №3"
-            styleText={{ fontSize: "28px", height: "33px" }}
+            styleText={{ fontSize: "28px", height: "60px" }}
           />
           <Textarea
             id="box4_1_content_1_2"
@@ -974,14 +974,14 @@ export default function Home() {
             onChange={(e) => setData("box4_1_content_1_2", e)}
             errors={errors}
             // title="Блок №3"
-            styleText={{ fontSize: "28px", height: "33px" }}
+            styleText={{ fontSize: "28px", height: "60px" }}
           />
           <Textarea
             id="box4_1_content_1_3"
             value={data.box4_1_content_1_3 as string}
             onChange={(e) => setData("box4_1_content_1_3", e)}
             errors={errors}
-            styleText={{ fontSize: "14px", height: "53px" }}
+            styleText={{ fontSize: "14px", height: "47px" }}
           />
           <div className="box4-main">
             <div className="content-navigate-box4_1">
@@ -1085,14 +1085,14 @@ export default function Home() {
               onChange={(e) => setData("box4_1_content_2_1", e)}
               errors={errors}
               // title="Блок №3"
-              styleText={{ fontSize: "28px", height: "33px" }}
+              styleText={{ fontSize: "28px", height: "60px" }}
             />
             <Textarea
               id="box4_1_content_2_2"
               value={data.box4_1_content_2_2 as string}
               onChange={(e) => setData("box4_1_content_2_2", e)}
               errors={errors}
-              styleText={{ fontSize: "14px", height: "53px" }}
+              styleText={{ fontSize: "14px", height: "47px" }}
             />
           </div>
           <main>
@@ -1103,7 +1103,7 @@ export default function Home() {
                 onChange={(e) => setData("box4_1_content_4", e)}
                 errors={errors}
                 // title="Главный баннер"
-                styleText={{ fontSize: "18px", height: "23px" }}
+                styleText={{ fontSize: "18px", height: "50px" }}
               />
               <Textarea
                 id="box4_1_content_5"
@@ -1111,7 +1111,7 @@ export default function Home() {
                 onChange={(e) => setData("box4_1_content_5", e)}
                 errors={errors}
                 // title="Главный баннер"
-                styleText={{ fontSize: "28px", height: "33px" }}
+                styleText={{ fontSize: "28px", height: "60px" }}
               />
               <Textarea
                 id="box4_1_content_6"
@@ -1119,7 +1119,7 @@ export default function Home() {
                 onChange={(e) => setData("box4_1_content_6", e)}
                 errors={errors}
                 // title="Главный баннер"
-                styleText={{ fontSize: "14px", height: "43px" }}
+                styleText={{ fontSize: "14px", height: "47px" }}
               />
             </div>
 
@@ -1130,7 +1130,7 @@ export default function Home() {
                 onChange={(e) => setData("box4_1_content_7", e)}
                 errors={errors}
                 // title="Главный баннер"
-                styleText={{ fontSize: "18px", height: "23px" }}
+                styleText={{ fontSize: "18px", height: "50px" }}
               />
               <Textarea
                 id="box4_1_content_8"
@@ -1138,7 +1138,7 @@ export default function Home() {
                 onChange={(e) => setData("box4_1_content_8", e)}
                 errors={errors}
                 // title="Главный баннер"
-                styleText={{ fontSize: "28px", height: "33px" }}
+                styleText={{ fontSize: "28px", height: "60px" }}
               />
               <Textarea
                 id="box4_1_content_9"
@@ -1146,7 +1146,7 @@ export default function Home() {
                 onChange={(e) => setData("box4_1_content_9", e)}
                 errors={errors}
                 // title="Главный баннер"
-                styleText={{ fontSize: "14px", height: "43px" }}
+                styleText={{ fontSize: "14px", height: "47px" }}
               />
             </div>
           </main>
@@ -1157,7 +1157,7 @@ export default function Home() {
               onChange={(e) => setData("box4_1_content_10", e)}
               errors={errors}
               // title="Главный баннер"
-              styleText={{ fontSize: "14px", height: "43px" }}
+              styleText={{ fontSize: "14px", height: "47px" }}
             />
             <Textarea
               id="box4_1_content_11"
@@ -1165,7 +1165,7 @@ export default function Home() {
               onChange={(e) => setData("box4_1_content_11", e)}
               errors={errors}
               // title="Главный баннер"
-              styleText={{ fontSize: "14px", height: "43px" }}
+              styleText={{ fontSize: "14px", height: "47px" }}
             />
             <Textarea
               id="box4_1_content_12"
@@ -1173,7 +1173,7 @@ export default function Home() {
               onChange={(e) => setData("box4_1_content_12", e)}
               errors={errors}
               // title="Главный баннер"
-              styleText={{ fontSize: "14px", height: "43px" }}
+              styleText={{ fontSize: "14px", height: "47px" }}
             />
             <Textarea
               id="box4_1_content_13"
@@ -1181,7 +1181,7 @@ export default function Home() {
               onChange={(e) => setData("box4_1_content_13", e)}
               errors={errors}
               // title="Главный баннер"
-              styleText={{ fontSize: "14px", height: "43px" }}
+              styleText={{ fontSize: "14px", height: "47px" }}
             />
           </footer>
           <Textarea
@@ -1189,21 +1189,21 @@ export default function Home() {
             value={data.box4_1_content_14 as string}
             onChange={(e) => setData("box4_1_content_14", e)}
             errors={errors}
-            styleText={{ fontSize: "14px", height: "53px" }}
+            styleText={{ fontSize: "14px", height: "47px" }}
           />
           {/* <Textarea
             id="box4_1_content_15"
             value={data.box4_1_content_15 as string}
             onChange={(e) => setData("box4_1_content_15", e)}
             errors={errors}
-            styleText={{ fontSize: "28px", height: "43px" }}
+            styleText={{ fontSize: "28px", height: "60px" }}
           />
           <Textarea
             id="box4_1_content_16"
             value={data.box4_1_content_16 as string}
             onChange={(e) => setData("box4_1_content_16", e)}
             errors={errors}
-            styleText={{ fontSize: "18px", height: "23px" }}
+            styleText={{ fontSize: "18px", height: "50px" }}
           /> */}
           <nav>
             <Textarea
@@ -1211,7 +1211,7 @@ export default function Home() {
               value={data.list_4_title as string}
               onChange={(e) => setData("list_4_title", e)}
               errors={errors}
-              styleText={{ fontSize: "28px", height: "43px" }}
+              styleText={{ fontSize: "28px", height: "60px" }}
             />
             <Textarea
               id="list_4_content"
@@ -1219,8 +1219,8 @@ export default function Home() {
               onChange={(e) => setData("list_4_content", e)}
               errors={errors}
               styleText={{
-                fontSize: "18px",
-                height: "23px",
+                fontSize: "14px",
+                height: "47px",
                 textAlign: "start",
               }}
               listMode={true}
@@ -1232,7 +1232,7 @@ export default function Home() {
               value={data.list_5_title as string}
               onChange={(e) => setData("list_5_title", e)}
               errors={errors}
-              styleText={{ fontSize: "28px", height: "43px" }}
+              styleText={{ fontSize: "28px", height: "60px" }}
             />
             <Textarea
               id="list_5_content"
@@ -1240,8 +1240,8 @@ export default function Home() {
               onChange={(e) => setData("list_5_content", e)}
               errors={errors}
               styleText={{
-                fontSize: "18px",
-                height: "23px",
+                fontSize: "14px",
+                height: "47px",
                 textAlign: "start",
               }}
               listMode={true}
@@ -1253,7 +1253,7 @@ export default function Home() {
               value={data.list_6_title as string}
               onChange={(e) => setData("list_6_title", e)}
               errors={errors}
-              styleText={{ fontSize: "28px", height: "43px" }}
+              styleText={{ fontSize: "28px", height: "60px" }}
             />
             <Textarea
               id="list_6_content"
@@ -1261,8 +1261,8 @@ export default function Home() {
               onChange={(e) => setData("list_6_content", e)}
               errors={errors}
               styleText={{
-                fontSize: "18px",
-                height: "23px",
+                fontSize: "14px",
+                height: "47px",
                 textAlign: "start",
               }}
               listMode={true}
@@ -1274,7 +1274,7 @@ export default function Home() {
               value={data.list_7_title as string}
               onChange={(e) => setData("list_7_title", e)}
               errors={errors}
-              styleText={{ fontSize: "28px", height: "43px" }}
+              styleText={{ fontSize: "28px", height: "60px" }}
             />
             <Textarea
               id="list_7_content"
@@ -1282,8 +1282,8 @@ export default function Home() {
               onChange={(e) => setData("list_7_content", e)}
               errors={errors}
               styleText={{
-                fontSize: "18px",
-                height: "23px",
+                fontSize: "14px",
+                height: "47px",
                 textAlign: "start",
               }}
               listMode={true}
@@ -1297,7 +1297,7 @@ export default function Home() {
             onChange={(e) => setData("box_mid_1_content_1", e)}
             errors={errors}
             title="Блок №5"
-            styleText={{ fontSize: "28px", height: "33px" }}
+            styleText={{ fontSize: "28px", height: "60px" }}
           />
           <Textarea
             id="box_mid_1_content_2"
@@ -1305,21 +1305,21 @@ export default function Home() {
             onChange={(e) => setData("box_mid_1_content_2", e)}
             errors={errors}
             // title="Блок №3"
-            styleText={{ fontSize: "18px", height: "23px" }}
+            styleText={{ fontSize: "18px", height: "50px" }}
           />
           <Textarea
             id="box_mid_1_content_3"
             value={data.box_mid_1_content_3 as string}
             onChange={(e) => setData("box_mid_1_content_3", e)}
             errors={errors}
-            styleText={{ fontSize: "14px", height: "53px", textAlign: "start" }}
+            styleText={{ fontSize: "14px", height: "47px", textAlign: "start" }}
           />
           {/* <Textarea
             id="box_mid_1_content_4"
             value={data.box_mid_1_content_4 as string}
             onChange={(e) => setData("box_mid_1_content_4", e)}
             errors={errors}
-            styleText={{ fontSize: "14px", height: "53px", textAlign: "start" }}
+            styleText={{ fontSize: "14px", height: "47px", textAlign: "start" }}
           /> */}
         </div>
         <div>
@@ -1329,7 +1329,7 @@ export default function Home() {
             onChange={(e) => setData("box_mid_2_content_1", e)}
             errors={errors}
             title="Блок №6"
-            styleText={{ fontSize: "28px", height: "33px" }}
+            styleText={{ fontSize: "28px", height: "60px" }}
           />
           <Textarea
             id="box_mid_2_content_2"
@@ -1337,14 +1337,14 @@ export default function Home() {
             onChange={(e) => setData("box_mid_2_content_2", e)}
             errors={errors}
             // title="Блок №3"
-            styleText={{ fontSize: "18px", height: "23px" }}
+            styleText={{ fontSize: "18px", height: "50px" }}
           />
           <Textarea
             id="box_mid_2_content_3"
             value={data.box_mid_2_content_3 as string}
             onChange={(e) => setData("box_mid_2_content_3", e)}
             errors={errors}
-            styleText={{ fontSize: "14px", height: "53px" }}
+            styleText={{ fontSize: "14px", height: "47px" }}
           />
           <Textarea
             id="box_mid_2_content_4"
@@ -1352,14 +1352,14 @@ export default function Home() {
             onChange={(e) => setData("box_mid_2_content_4", e)}
             errors={errors}
             // title="Блок №3"
-            styleText={{ fontSize: "18px", height: "23px" }}
+            styleText={{ fontSize: "18px", height: "50px" }}
           />
           <Textarea
             id="box_mid_2_content_5"
             value={data.box_mid_2_content_5 as string}
             onChange={(e) => setData("box_mid_2_content_5", e)}
             errors={errors}
-            styleText={{ fontSize: "14px", height: "53px" }}
+            styleText={{ fontSize: "14px", height: "47px" }}
           />
           <nav>
             <Textarea
@@ -1367,7 +1367,7 @@ export default function Home() {
               value={data.list_8_title as string}
               onChange={(e) => setData("list_8_title", e)}
               errors={errors}
-              styleText={{ fontSize: "28px", height: "43px" }}
+              styleText={{ fontSize: "28px", height: "60px" }}
             />
             <Textarea
               id="list_8_content"
@@ -1375,8 +1375,8 @@ export default function Home() {
               onChange={(e) => setData("list_8_content", e)}
               errors={errors}
               styleText={{
-                fontSize: "18px",
-                height: "23px",
+                fontSize: "14px",
+                height: "47px",
                 textAlign: "start",
               }}
               listMode={true}
@@ -1390,7 +1390,7 @@ export default function Home() {
             onChange={(e) => setData("box_mid_2_1_content_1", e)}
             errors={errors}
             title="Блок №7"
-            styleText={{ fontSize: "28px", height: "33px" }}
+            styleText={{ fontSize: "28px", height: "60px" }}
           />
           <Textarea
             id="box_mid_2_1_content_2"
@@ -1398,14 +1398,14 @@ export default function Home() {
             onChange={(e) => setData("box_mid_2_1_content_2", e)}
             errors={errors}
             // title="Блок №3"
-            styleText={{ fontSize: "18px", height: "23px" }}
+            styleText={{ fontSize: "18px", height: "50px" }}
           />
           <Textarea
             id="box_mid_2_1_content_3"
             value={data.box_mid_2_1_content_3 as string}
             onChange={(e) => setData("box_mid_2_1_content_3", e)}
             errors={errors}
-            styleText={{ fontSize: "14px", height: "53px" }}
+            styleText={{ fontSize: "14px", height: "47px" }}
           />
         </div>
         {/* <div>
@@ -1415,7 +1415,7 @@ export default function Home() {
             onChange={(e) => setData("box5_content_1", e)}
             errors={errors}
             title="Блок №8"
-            styleText={{ fontSize: "28px", height: "33px" }}
+            styleText={{ fontSize: "28px", height: "60px" }}
           />
           <main>
             <div>
@@ -1425,14 +1425,14 @@ export default function Home() {
                 onChange={(e) => setData("box5_content_2", e)}
                 errors={errors}
                 // title="Блок №3"
-                styleText={{ fontSize: "18px", height: "23px" }}
+                styleText={{ fontSize: "18px", height: "50px" }}
               />
               <Textarea
                 id="box5_content_3"
                 value={data.box5_content_3 as string}
                 onChange={(e) => setData("box5_content_3", e)}
                 errors={errors}
-                styleText={{ fontSize: "14px", height: "53px" }}
+                styleText={{ fontSize: "14px", height: "47px" }}
               />
             </div>
             <div>
@@ -1442,14 +1442,14 @@ export default function Home() {
                 onChange={(e) => setData("box5_content_4", e)}
                 errors={errors}
                 // title="Блок №3"
-                styleText={{ fontSize: "18px", height: "23px" }}
+                styleText={{ fontSize: "18px", height: "50px" }}
               />
               <Textarea
                 id="box5_content_5"
                 value={data.box5_content_5 as string}
                 onChange={(e) => setData("box5_content_5", e)}
                 errors={errors}
-                styleText={{ fontSize: "14px", height: "53px" }}
+                styleText={{ fontSize: "14px", height: "47px" }}
               />
             </div>
           </main>

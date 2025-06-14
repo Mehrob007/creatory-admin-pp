@@ -19,15 +19,21 @@ export default function Textarea({
   onChange,
   styleText,
   placeholder,
-  listMode = false, 
+  listMode = false,
 }: TextareaProps) {
   const textareaRef = useRef<HTMLTextAreaElement>(null);
 
   useEffect(() => {
-    if (textareaRef.current) {
-      textareaRef.current.style.height = "auto";
-      textareaRef.current.style.height = `${textareaRef.current.scrollHeight}px`;
-    }
+    const el = textareaRef.current;
+    if (!el) return;
+
+    el.style.height = "auto";
+    const lineCount = value?.split(/\r?\n/).length; 
+    if (lineCount <= 1) {
+      el.style.height = styleText?.height as string;
+    } else {
+      el.style.height = `${el.scrollHeight}px`;
+    } 
   }, [value]);
 
   const handleKeyDown = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
@@ -47,13 +53,15 @@ export default function Textarea({
 
       setTimeout(() => {
         if (textareaRef.current) {
-          const newCursorPos = cursorPos + newText.length - textBeforeCursor.length;
+          const newCursorPos =
+            cursorPos + newText.length - textBeforeCursor.length;
           textareaRef.current.setSelectionRange(newCursorPos, newCursorPos);
         }
       }, 0);
     }
   };
-  
+  // console.log("value", JSON.stringify(value));
+
   return (
     <div className="textarea">
       {title && <label htmlFor={id}>{title}</label>}
@@ -64,6 +72,7 @@ export default function Textarea({
           resize: "none",
           overflow: "hidden",
           height: "auto",
+          // lineHeight: styleText?.fontSize,
         }}
         onChange={(e) => onChange(e.target.value)}
         onKeyDown={listMode ? handleKeyDown : undefined}
