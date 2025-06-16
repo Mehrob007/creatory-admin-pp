@@ -30,7 +30,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #0F0F0F;
+  background-color: #0f0f0f;
   color: #59e991;
   font-family: "Montserrat", sans-serif;
   cursor: pointer;
@@ -92,7 +92,6 @@ button {
   color: #ffffff;
   outline: none;
   padding: 12px 20px;
-  padding-bottom: 20px;
   text-align: center;
   resize: none;
   overflow: hidden;
@@ -111,6 +110,7 @@ button {
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  height: 60px;
 }
 .InputPages > label {
   font-family: "Montserrat", sans-serif;
@@ -331,7 +331,7 @@ button {
   position: relative;
 }
 .home > .home-content {
-  width: 938px;
+  width: 1050px;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -339,6 +339,7 @@ button {
 .home > .home-content > div {
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
 .home > .home-content > div > label {
   font-family: "Montserrat", sans-serif;
@@ -351,13 +352,17 @@ button {
   width: 100%;
   margin-bottom: 10px;
 }
+.home > .home-content > div > nav, .home > .home-content > div > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 .home > .home-content > div > main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
   align-items: start;
   justify-content: center;
-  margin: 5px 0;
 }
 .home > .home-content > div > main > label {
   font-family: "Montserrat", sans-serif;
@@ -368,6 +373,11 @@ button {
   color: #59e991;
   text-align: center;
   width: 100%;
+}
+.home > .home-content > div > main > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .home > .home-content > div > main > div > div {
   width: 100%;

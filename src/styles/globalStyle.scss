@@ -36,7 +36,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #0F0F0F;
+  background-color: #0f0f0f;
   color: #59e991;
   font-family: "Montserrat", sans-serif;
   cursor: pointer;
@@ -95,7 +95,7 @@ button {
     outline: none;
     padding: 12px 20px;
     // line-height: 1;
-    padding-bottom: 20px;
+    // padding-bottom: 20px;
     text-align: center;
     resize: none;
     overflow: hidden;
@@ -120,6 +120,7 @@ button {
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  height: 60px;
   & > label {
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
@@ -350,7 +351,7 @@ button {
   width: 100%;
   position: relative;
   & > .home-content {
-    width: 938px;
+    width: 1050px;
     // width: 100%;
     display: flex;
     flex-direction: column;
@@ -358,6 +359,7 @@ button {
     & > div {
       display: flex;
       flex-direction: column;
+      gap: 10px;
       // justify-content: center;
       & > label {
         font-family: "Montserrat", sans-serif;
@@ -370,13 +372,19 @@ button {
         width: 100%;
         margin-bottom: 10px;
       }
+      & > nav,
+      & > div {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
       & > main {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 10px;
         align-items: start;
         justify-content: center;
-        margin: 5px 0;
+        // margin: 5px 0;
         & > label {
           font-family: "Montserrat", sans-serif;
           font-weight: 300;
@@ -388,11 +396,15 @@ button {
           width: 100%;
         }
         & > div {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
           & > div {
             width: 100%;
           }
         }
       }
+
       & > footer {
         display: flex;
         gap: 10px;
