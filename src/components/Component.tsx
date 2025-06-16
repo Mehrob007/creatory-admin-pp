@@ -16,7 +16,7 @@ export default function Component({ children }: ComponentProps) {
   useEffect(() => {
     const token = localStorage.getItem("token");
     if (token) {
-      router.replace("/");
+      // router.replace("/");
     } else {
       router.replace("/login");
     }

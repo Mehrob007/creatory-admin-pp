@@ -17,6 +17,48 @@ button {
   letter-spacing: 0%;
 }
 
+.active-link {
+  color: #000000 !important;
+  background-color: #59e991;
+}
+
+.input-file {
+  width: 207px;
+  height: 63px;
+  gap: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0F0F0F;
+  color: #59e991;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.1s linear;
+}
+.input-file > input {
+  display: none;
+}
+.input-file:hover {
+  color: #000000 !important;
+  background-color: #59e991;
+}
+
+.active-loading {
+  filter: brightness(40%);
+}
+.active-loading:hover {
+  background-color: #000000;
+  color: #59e991 !important;
+  cursor: not-allowed;
+}
+
 .active-button {
   background: #59e991;
   color: #000000;
@@ -25,7 +67,7 @@ button {
 .textarea {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   gap: 10px;
   width: 100%;
 }
@@ -36,6 +78,8 @@ button {
   line-height: 100%;
   letter-spacing: 0%;
   color: #59e991;
+  text-align: center;
+  width: 100%;
 }
 .textarea > textarea {
   box-sizing: border-box;
@@ -53,6 +97,13 @@ button {
   resize: none;
   overflow: hidden;
   font-family: "Montserrat", sans-serif;
+}
+.textarea > P {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
 }
 
 .InputPages {
@@ -280,18 +331,43 @@ button {
   position: relative;
 }
 .home > .home-content {
-  max-width: 938px;
-  width: 100%;
+  width: 938px;
   display: flex;
   flex-direction: column;
   gap: 40px;
+}
+.home > .home-content > div {
+  display: flex;
+  flex-direction: column;
+}
+.home > .home-content > div > label {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #59e991;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10px;
 }
 .home > .home-content > div > main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
-  align-items: center;
+  align-items: start;
   justify-content: center;
+  margin: 5px 0;
+}
+.home > .home-content > div > main > label {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #59e991;
+  text-align: center;
+  width: 100%;
 }
 .home > .home-content > div > main > div > div {
   width: 100%;

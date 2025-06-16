@@ -102,3 +102,14 @@ export const arrKeys = [
   // "box5_content_4",
   // "box5_content_5",
 ];
+export const arrKeysService = [
+  "service_content_1",
+  "service_content_2",
+  "service_content_3",
+];
+export const arrKeysOffer = [
+  "offer_content_1",
+  "offer_content_2",
+  "offer_content_3",
+  "offer_content_4",
+];

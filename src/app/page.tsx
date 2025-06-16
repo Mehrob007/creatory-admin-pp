@@ -6,6 +6,7 @@ import { arrKeys } from "@/keys";
 import { apiClient } from "@/utils/apiClient";
 // import { apiClient } from "@/utils/apiClient";
 import React, { useEffect, useState } from "react";
+import InputFile from "../components/element-tags/InputFile";
 
 // interface ArrData {
 //   [key: string]: string;
@@ -325,7 +326,6 @@ export default function Home() {
         console.error("Error with key:", key, e);
       }
     }
-
     setLoading(false);
   }
 
@@ -457,6 +457,22 @@ export default function Home() {
     }
   };
 
+  const onChangeFile = async (
+    key: string,
+    e: React.ChangeEvent<HTMLInputElement>,
+  ): Promise<boolean> => {
+    try {
+      const data = new FormData();
+      data.append("key", key);
+      data.append("file", e?.target?.files?.[0] as File);
+      const res = await apiClient.post("api/files", data);
+      return !!res as boolean;
+    } catch (e) {
+      console.error(e);
+      return false;
+    }
+  };
+
   useEffect(() => {
     getData();
   }, []);
@@ -566,6 +582,27 @@ export default function Home() {
             // title="Главный баннер"
             styleText={{ fontSize: "14px", height: "47px" }}
           />
+        </div>
+        <div>
+          <label>Видео</label>
+          <main style={{ gridTemplateColumns: "1fr 207px" }}>
+            <Textarea
+              edit={false}
+              id="file_video_content_title_1"
+              value={"загрузите видео для плеера (Не более 30мб)"}
+              onChange={() => {}}
+              // title="Видео"
+              styleText={{
+                fontSize: "18px",
+                height: "60px",
+                textTransform: "uppercase",
+                paddingBottom: "10px",
+                paddingTop: "18px",
+              }}
+              textInfo="*Сейчас загружен файл: |#59E991&Видео основное.mp4"
+            />
+            <InputFile id="file_video_content_1" onChange={onChangeFile} />
+          </main>
         </div>
         <div>
           <Textarea
@@ -1382,6 +1419,59 @@ export default function Home() {
               listMode={true}
             />
           </nav>
+          <main style={{ gridTemplateColumns: "1fr 207px" }}>
+            <Textarea
+              edit={false}
+              id="file_content_title_2"
+              value={
+                "Зоны Hyde Park Tower (R6), Gorky Park Tower (R5), Imperial Park Tower (R4)"
+              }
+              onChange={(e) => setData("file_content_title_2", e)}
+              // title="Видео"
+              styleText={{
+                fontSize: "14px",
+                height: "60px",
+                paddingBottom: "10px",
+                paddingTop: "20px",
+              }}
+              textInfo="*Сейчас загружен файл: |#59E991&Прайс-лист на услуги мойки.pdf"
+            />
+            <InputFile id="file_content_2" onChange={onChangeFile} />
+          </main>
+          <main style={{ gridTemplateColumns: "1fr 207px" }}>
+            <Textarea
+              value={"Зоны Regent's Park Tower (R3)"}
+              edit={false}
+              id="file_content_title_3"
+              onChange={(e) => setData("file_content_title_3", e)}
+              // title="Видео"
+              styleText={{
+                fontSize: "14px",
+                height: "60px",
+                paddingBottom: "10px",
+                paddingTop: "20px",
+              }}
+              textInfo="*Сейчас загружен файл: |#59E991&Прайс-лист на услуги мойки.pdf"
+            />
+            <InputFile id="file_content_3" onChange={onChangeFile} />
+          </main>
+          <main style={{ gridTemplateColumns: "1fr 207px" }}>
+            <Textarea
+              edit={false}
+              id="file_content_title_4"
+              value={"Зоны Central Park Tower (R7)"}
+              onChange={(e) => setData("file_content_title_4", e)}
+              // title="Видео"
+              styleText={{
+                fontSize: "14px",
+                height: "60px",
+                paddingBottom: "10px",
+                paddingTop: "20px",
+              }}
+              textInfo="*Сейчас загружен файл: |#59E991&Прайс-лист на услуги мойки.pdf"
+            />
+            <InputFile id="file_content_4" onChange={onChangeFile} />
+          </main>
         </div>
         <div>
           <Textarea

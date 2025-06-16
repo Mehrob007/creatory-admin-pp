@@ -23,6 +23,46 @@ button {
   line-height: 100%;
   letter-spacing: 0%;
 }
+.active-link {
+  color: #000000 !important;
+  background-color: #59e991;
+}
+.input-file {
+  width: 207px;
+  height: 63px;
+  gap: 10px;
+  border-radius: 10px;
+  // padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0F0F0F;
+  color: #59e991;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.1s linear;
+  & > input {
+    display: none;
+  }
+  &:hover {
+    color: #000000 !important;
+    background-color: #59e991;
+  }
+}
+.active-loading {
+  filter: brightness(40%);
+  &:hover {
+    background-color: #000000;
+    color: #59e991 !important;
+    cursor: not-allowed;
+  }
+}
 .active-button {
   background: $admin-color;
   color: $black-color;
@@ -30,7 +70,7 @@ button {
 .textarea {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   gap: 10px;
   width: 100%;
   & > label {
@@ -40,11 +80,13 @@ button {
     line-height: 100%;
     letter-spacing: 0%;
     color: $admin-color;
+    text-align: center;
+    width: 100%;
   }
   & > textarea {
     box-sizing: border-box;
     vertical-align: top;
-    height: auto ;
+    height: auto;
     width: 100%;
     border: 2px solid $background-color;
     border-radius: 10px;
@@ -64,6 +106,13 @@ button {
     // display: flex;
     // align-items: end;
     // justify-content: center;
+  }
+  & > P {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
   }
 }
 .InputPages {
@@ -301,18 +350,43 @@ button {
   width: 100%;
   position: relative;
   & > .home-content {
-    max-width: 938px;
-    width: 100%;
+    width: 938px;
+    // width: 100%;
     display: flex;
     flex-direction: column;
     gap: 40px;
     & > div {
+      display: flex;
+      flex-direction: column;
+      // justify-content: center;
+      & > label {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: $admin-color;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 10px;
+      }
       & > main {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 10px;
-        align-items: center;
+        align-items: start;
         justify-content: center;
+        margin: 5px 0;
+        & > label {
+          font-family: "Montserrat", sans-serif;
+          font-weight: 300;
+          font-size: 18px;
+          line-height: 100%;
+          letter-spacing: 0%;
+          color: $admin-color;
+          text-align: center;
+          width: 100%;
+        }
         & > div {
           & > div {
             width: 100%;

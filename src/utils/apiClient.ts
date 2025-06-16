@@ -5,9 +5,9 @@ const BUSE_URL =
 
 export const apiClient = axios.create({
   baseURL: BUSE_URL,
-  headers: {
-    "Content-Type": "application/json",
-  },
+  // headers: {
+  //   "Content-Type": "application/json",
+  // },
 });
 apiClient.interceptors.request.use(
   (config) => {
