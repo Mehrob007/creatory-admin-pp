@@ -4,6 +4,7 @@ import { useRouter, usePathname } from "next/navigation";
 import React, { ReactNode, useEffect } from "react";
 import LeftMenu from "./menu/LeftMenu";
 import Image from "next/image";
+import { useFormStore } from "@/hooks/useFormStore";
 
 interface ComponentProps {
   children: ReactNode;
@@ -11,16 +12,21 @@ interface ComponentProps {
 
 export default function Component({ children }: ComponentProps) {
   const pathName = usePathname();
+  const { setDataClear, data, } = useFormStore();
   const router = useRouter();
 
   useEffect(() => {
     const token = localStorage.getItem("token");
     if (token) {
       // router.replace("/");
+      setDataClear();
     } else {
       router.replace("/login");
     }
   }, [pathName, router]);
+
+  console.log("data", data);
+  
 
   return (
     <div

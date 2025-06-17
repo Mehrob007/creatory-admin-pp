@@ -98,7 +98,7 @@ export default function Offer() {
           />
           <main style={{ gridTemplateColumns: "1fr 207px" }}>
             <Textarea
-              value={"новая врсия"}
+              value={"НОВАЯ ВЕРСИЯ"}
               edit={false}
               id="offer_file_content_title_1"
               onChange={(e) => setData("offer_file_content_title_1", e)}
@@ -115,7 +115,7 @@ export default function Offer() {
           </main>
           <main style={{ gridTemplateColumns: "1fr 207px" }}>
             <Textarea
-              value={"Более старые версии"}
+              value={"БОЛЕЕ СТАРЫЕ ВЕРСИИ"}
               edit={false}
               id="offer_file_content_title_2"
               onChange={(e) => setData("offer_file_content_title_2", e)}
@@ -139,7 +139,7 @@ export default function Offer() {
           />
           <main style={{ gridTemplateColumns: "1fr 207px" }}>
             <Textarea
-              value={"новая врсия"}
+              value={"НОВАЯ ВЕРСИЯ"}
               edit={false}
               id="offer_file_content_title_3"
               onChange={(e) => setData("offer_file_content_title_3", e)}
@@ -156,7 +156,7 @@ export default function Offer() {
           </main>
           <main style={{ gridTemplateColumns: "1fr 207px" }}>
             <Textarea
-              value={"Более старые версии"}
+              value={"БОЛЕЕ СТАРЫЕ ВЕРСИИ"}
               edit={false}
               id="offer_file_content_title_4"
               onChange={(e) => setData("offer_file_content_title_4", e)}
@@ -180,7 +180,7 @@ export default function Offer() {
           />
           <main style={{ gridTemplateColumns: "1fr 207px" }}>
             <Textarea
-              value={"новая врсия"}
+              value={"НОВАЯ ВЕРСИЯ"}
               edit={false}
               id="offer_file_content_title_5"
               onChange={(e) => setData("offer_file_content_title_5", e)}
@@ -197,7 +197,7 @@ export default function Offer() {
           </main>
           <main style={{ gridTemplateColumns: "1fr 207px" }}>
             <Textarea
-              value={"Более старые версии"}
+              value={"БОЛЕЕ СТАРЫЕ ВЕРСИИ"}
               edit={false}
               id="offer_file_content_title_6"
               onChange={(e) => setData("offer_file_content_title_6", e)}

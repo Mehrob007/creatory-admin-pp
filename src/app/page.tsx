@@ -1042,9 +1042,9 @@ export default function Home() {
               {dataArrBox4_1?.length &&
                 dataArrBox4_1
                   .filter((e) => e.id === selection)
-                  .map((prev) => (
+                  .map((prev, i) => (
                     <>
-                      <div className="content-top-box4_1-1-com-1">
+                      <div className="content-top-box4_1-1-com-1" key={i}>
                         {prev.content.map((e, i) => (
                           <div key={i}>
                             {/* <h1>{e.title}</h1>

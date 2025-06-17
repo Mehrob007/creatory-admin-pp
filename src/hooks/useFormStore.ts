@@ -5,6 +5,7 @@ interface FormState {
   errors: { [key: string]: string };
   setData: (field: string, value: string | number) => void;
   validate: (rules: ValidationRules) => boolean;
+  setDataClear: () => void;
   resetErrors: () => void;
   checked: (rules: ValidationRules) => boolean;
 }
@@ -28,6 +29,10 @@ export const useFormStore = create<FormState>((set, get) => ({
   setData: (field, value) =>
     set((state) => ({
       data: { ...state.data, [field]: value },
+    })),
+  setDataClear: () =>
+    set(() => ({
+      data: {},
     })),
 
   resetErrors: () => set({ errors: {} }),
