@@ -375,12 +375,15 @@ export default function Home() {
 
   const getData = async () => {
     const haveKeysData: string[] = [];
-    await arrKeys.map(async (e) => {
-      const dataName = await getItems(e);
-      haveKeysData.push(dataName);
-    });
+
+    for (const key of arrKeys) {
+      const dataName = await getItems(key);
+      if (dataName) haveKeysData.push(dataName);
+    }
+
     setHaveKeys(haveKeysData);
   };
+
   const onChangeBox4_1 = (
     key: string,
     value: string,
@@ -473,8 +476,24 @@ export default function Home() {
     }
   };
 
-  useEffect(() => {
+  const getDataAndChek = async () => {
+    setLoading(true);
+    const dataItem = {
+      name: "test",
+      value: "test",
+    };
+    try {
+      const res = await apiClient.post("/api/content", dataItem);
+      console.log("res", res);
+    } catch (e) {
+      console.error("Error with key:", e);
+    }
+    setLoading(false);
     getData();
+  };
+
+  useEffect(() => {
+    getDataAndChek();
   }, []);
 
   useEffect(() => {
@@ -907,7 +926,7 @@ export default function Home() {
             value={data.box4_content_37 as string}
             onChange={(e) => setData("box4_content_37", e)}
             errors={errors}
-            styleText={{ fontSize: "18px", height: "50px" }}
+            styleText={{ fontSize: "14px", height: "35px" }}
           />
           <nav>
             <Textarea
@@ -915,7 +934,7 @@ export default function Home() {
               value={data.list_1_title as string}
               onChange={(e) => setData("list_1_title", e)}
               errors={errors}
-              styleText={{ fontSize: "28px", height: "60px" }}
+              styleText={{ fontSize: "18px", height: "50px" }}
             />
             <Textarea
               id="list_1_content"
@@ -936,7 +955,7 @@ export default function Home() {
               value={data.list_2_title as string}
               onChange={(e) => setData("list_2_title", e)}
               errors={errors}
-              styleText={{ fontSize: "28px", height: "60px" }}
+              styleText={{ fontSize: "18px", height: "50px" }}
             />
             <Textarea
               id="list_2_content"
@@ -957,7 +976,7 @@ export default function Home() {
               value={data.list_3_title as string}
               onChange={(e) => setData("list_3_title", e)}
               errors={errors}
-              styleText={{ fontSize: "28px", height: "60px" }}
+              styleText={{ fontSize: "18px", height: "50px" }}
             />
             <Textarea
               id="list_3_content"
@@ -988,7 +1007,7 @@ export default function Home() {
             onChange={(e) => setData("box4_1_content_2", e)}
             errors={errors}
             // title="Блок №3"
-            styleText={{ fontSize: "28px", height: "60px" }}
+            styleText={{ fontSize: "18px", height: "50px" }}
           />
           <Textarea
             id="box4_1_content_3"
@@ -1003,7 +1022,7 @@ export default function Home() {
             onChange={(e) => setData("box4_1_content_1_1", e)}
             errors={errors}
             // title="Блок №3"
-            styleText={{ fontSize: "28px", height: "60px" }}
+            styleText={{ fontSize: "18px", height: "50px" }}
           />
           <Textarea
             id="box4_1_content_1_2"
@@ -1011,7 +1030,7 @@ export default function Home() {
             onChange={(e) => setData("box4_1_content_1_2", e)}
             errors={errors}
             // title="Блок №3"
-            styleText={{ fontSize: "28px", height: "60px" }}
+            styleText={{ fontSize: "18px", height: "50px" }}
           />
           <Textarea
             id="box4_1_content_1_3"
@@ -1248,7 +1267,7 @@ export default function Home() {
               value={data.list_4_title as string}
               onChange={(e) => setData("list_4_title", e)}
               errors={errors}
-              styleText={{ fontSize: "28px", height: "60px" }}
+              styleText={{ fontSize: "18px", height: "50px" }}
             />
             <Textarea
               id="list_4_content"
@@ -1269,7 +1288,7 @@ export default function Home() {
               value={data.list_5_title as string}
               onChange={(e) => setData("list_5_title", e)}
               errors={errors}
-              styleText={{ fontSize: "28px", height: "60px" }}
+              styleText={{ fontSize: "18px", height: "50px" }}
             />
             <Textarea
               id="list_5_content"
@@ -1290,7 +1309,7 @@ export default function Home() {
               value={data.list_6_title as string}
               onChange={(e) => setData("list_6_title", e)}
               errors={errors}
-              styleText={{ fontSize: "28px", height: "60px" }}
+              styleText={{ fontSize: "18px", height: "50px" }}
             />
             <Textarea
               id="list_6_content"
@@ -1311,7 +1330,7 @@ export default function Home() {
               value={data.list_7_title as string}
               onChange={(e) => setData("list_7_title", e)}
               errors={errors}
-              styleText={{ fontSize: "28px", height: "60px" }}
+              styleText={{ fontSize: "18px", height: "50px" }}
             />
             <Textarea
               id="list_7_content"
@@ -1404,7 +1423,7 @@ export default function Home() {
               value={data.list_8_title as string}
               onChange={(e) => setData("list_8_title", e)}
               errors={errors}
-              styleText={{ fontSize: "28px", height: "60px" }}
+              styleText={{ fontSize: "18px", height: "50px" }}
             />
             <Textarea
               id="list_8_content"

@@ -415,6 +415,7 @@ button {
           width: 100%;
           & > textarea {
             padding: 17px 0;
+            height: 100% !important;
           }
         }
       }

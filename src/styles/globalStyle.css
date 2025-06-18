@@ -393,6 +393,7 @@ button {
 }
 .home > .home-content > div > footer > div > textarea {
   padding: 17px 0;
+  height: 100% !important;
 }
 .home > .button-save {
   position: sticky;
