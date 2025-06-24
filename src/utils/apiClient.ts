@@ -2,7 +2,7 @@ import axios from "axios";
 
 const BUSE_URL =
   // "https://primeparking.ru/"
-  process.env.NEXT_PUBLIC_API_URL || "http://176.124.222.203:3010/";
+  process.env.NEXT_PUBLIC_API_URL || "http://109.172.38.63:3010/";
 
 export const apiClient = axios.create({
   baseURL: BUSE_URL,
