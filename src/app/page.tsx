@@ -618,7 +618,7 @@ export default function Home() {
                 paddingBottom: "10px",
                 paddingTop: "18px",
               }}
-              textInfo="*Сейчас загружен файл: |#59E991&Видео основное.mp4"
+              textInfo={`*Сейчас загружен файл: |#59E991&Видео основное.mp4`}
             />
             <InputFile id="file_video_content_1" onChange={onChangeFile} />
           </main>

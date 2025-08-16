@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useRef, useEffect } from "react";
 
 interface TextareaProps {
@@ -88,18 +88,7 @@ export default function Textarea({
         id={id}
       />
       {errors?.[id] && <p style={{ opacity: 1, color: "red" }}>{errors[id]}</p>}
-      {(textInfo as string) && (
-        <p>
-          {textInfo?.split("|")?.[0]}{" "}
-          {textInfo?.split("|")?.[1] ? (
-            <span style={{ color: textInfo?.split("|")?.[1]?.split("&")[0] }}>
-              {textInfo?.split("|")?.[1]?.split("&")[1]}
-            </span>
-          ) : (
-            ""
-          )}
-        </p>
-      )}
+      {textInfo && <p>*Сейчас загружен файл: {value}</p>}
       {/* *Сейчас загружен файл: |#59E991&Видео основное.mp4 */}
     </div>
   );
