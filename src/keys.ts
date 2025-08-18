@@ -78,6 +78,7 @@ export const arrKeys = [
   "list_4_content",
   "list_5_title",
   "list_5_content",
+  "schema_parking",
   "list_6_title",
   "list_6_content",
   "list_7_title",

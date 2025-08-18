@@ -388,7 +388,7 @@ export default function Home() {
     key: string,
     value: string,
     i: number,
-    params: string,
+    params: string
   ) => {
     if (params === "subContent") {
       const subContent = dataArrBox4_1
@@ -409,7 +409,7 @@ export default function Home() {
           } else {
             return e;
           }
-        }),
+        })
       );
       setData(
         "dataArrBox4_1",
@@ -422,7 +422,7 @@ export default function Home() {
         //     }
         //   }),
         // ),
-        "test",
+        "test"
       );
     } else {
       const content = dataArrBox4_1
@@ -443,7 +443,7 @@ export default function Home() {
           } else {
             return e;
           }
-        }),
+        })
       );
       setData(
         "dataArrBox4_1",
@@ -454,15 +454,15 @@ export default function Home() {
             } else {
               return e;
             }
-          }),
-        ),
+          })
+        )
       );
     }
   };
 
   const onChangeFile = async (
     key: string,
-    e: React.ChangeEvent<HTMLInputElement>,
+    e: React.ChangeEvent<HTMLInputElement>
   ): Promise<boolean> => {
     try {
       const data = new FormData();
@@ -1377,6 +1377,25 @@ export default function Home() {
             errors={errors}
             styleText={{ fontSize: "14px", height: "47px", textAlign: "start" }}
           /> */}
+          <main style={{ gridTemplateColumns: "1fr 207px" }}>
+            <Textarea
+              edit={false}
+              id="schema_parking"
+              value={
+                "Ознакомиться со схемой"
+              }
+              onChange={(e) => setData("schema_parking", e)}
+              // title="Видео"
+              styleText={{
+                fontSize: "14px",
+                height: "60px",
+                paddingBottom: "10px",
+                paddingTop: "20px",
+              }}
+              textInfo="*Сейчас загружен файл: |#59E991&Прайс-лист на услуги мойки.pdf"
+            />
+            <InputFile id="file_content_2" onChange={onChangeFile} />
+          </main>
         </div>
         <div>
           <Textarea
