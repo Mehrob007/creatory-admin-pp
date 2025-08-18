@@ -39,7 +39,7 @@ export default function Service() {
 
   const getItems = async (key: string) => {
     try {
-      const res = await apiClient(`content?name=${key}`);
+      const res = await apiClient(`/api/content?name=${key}`);
       console.log(res);
       const data = res.data.data;
       if (data) {
@@ -60,14 +60,22 @@ export default function Service() {
   };
   const onChangeFile = async (
     key: string,
-    e: React.ChangeEvent<HTMLInputElement>,
-  ): Promise<boolean> => {
+    e?: React.ChangeEvent<HTMLInputElement>
+  ): Promise<false | { res: boolean; data: string }> => {
     try {
       const data = new FormData();
       data.append("key", key);
       data.append("file", e?.target?.files?.[0] as File);
-      const res = await apiClient.post("api/files", data);
-      return !!res as boolean;
+      if (e?.target?.files?.[0]) {
+        const res = await apiClient.post("api/files", data);
+        return {
+          res: !!res as boolean,
+          data: res.data.data.fileName as string,
+        };
+      } else {
+        const res = await apiClient.get(`api/files?key=${key}`);
+        return { res: true, data: res.data.data.fileName as string };
+      }
     } catch (e) {
       console.error(e);
       return false;

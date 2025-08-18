@@ -462,14 +462,22 @@ export default function Home() {
 
   const onChangeFile = async (
     key: string,
-    e: React.ChangeEvent<HTMLInputElement>
-  ): Promise<boolean> => {
+    e?: React.ChangeEvent<HTMLInputElement>
+  ): Promise<false | { res: boolean; data: string }> => {
     try {
       const data = new FormData();
       data.append("key", key);
       data.append("file", e?.target?.files?.[0] as File);
-      const res = await apiClient.post("api/files", data);
-      return !!res as boolean;
+      if (e?.target?.files?.[0]) {
+        const res = await apiClient.post("api/files", data);
+        return {
+          res: !!res as boolean,
+          data: res.data.data.fileName as string,
+        };
+      } else {
+        const res = await apiClient.get(`api/files?key=${key}`);
+        return { res: true, data: res.data.data.fileName as string };
+      }
     } catch (e) {
       console.error(e);
       return false;
@@ -819,7 +827,7 @@ export default function Home() {
             errors={errors}
             styleText={{ fontSize: "14px", height: "47px" }}
           />
-          <main>
+          <main className="flexPromo">
             <div>
               <Textarea
                 id="box4_content_24"
@@ -1151,7 +1159,7 @@ export default function Home() {
               styleText={{ fontSize: "14px", height: "47px" }}
             />
           </div>
-          <main>
+          <main className="flexPromo">
             <div>
               <Textarea
                 id="box4_1_content_4"
@@ -1392,7 +1400,7 @@ export default function Home() {
               }}
               textInfo="*Сейчас загружен файл: |#59E991&Прайс-лист на услуги мойки.pdf"
             />
-            <InputFile id="file_content_2" onChange={onChangeFile} />
+            <InputFile id="schema_parking" onChange={onChangeFile} />
           </main>
         </div>
         <div>

@@ -1,5 +1,5 @@
 "use client";
-import { useFormStore } from "@/hooks/useFormStore";
+// import { useFormStore } from "@/hooks/useFormStore";
 import React, { useRef, useEffect } from "react";
 
 interface TextareaProps {
@@ -27,7 +27,7 @@ export default function Textarea({
   textInfo,
   edit = true,
 }: TextareaProps) {
-  const { data } = useFormStore();
+  // const { data } = useFormStore();
   const textareaRef = useRef<HTMLTextAreaElement>(null);
 
   useEffect(() => {
@@ -90,7 +90,7 @@ export default function Textarea({
         id={id}
       />
       {errors?.[id] && <p style={{ opacity: 1, color: "red" }}>{errors[id]}</p>}
-      {textInfo && <p>*Сейчас загружен файл: {data?.[id]}</p>}
+      {textInfo && <p>*Сейчас загружен файл:</p>}
       {/* *Сейчас загружен файл: |#59E991&Видео основное.mp4 */}
     </div>
   );

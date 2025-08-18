@@ -42,6 +42,17 @@ button {
   text-transform: uppercase;
   transition: all 0.1s linear;
 }
+
+.file-name {
+  position: absolute;
+  bottom: -1px;
+  left: 165px;
+  text-transform: none;
+  color: #59e991 ;
+
+}
+
+
 .input-file > input {
   display: none;
 }
@@ -352,7 +363,8 @@ button {
   width: 100%;
   margin-bottom: 10px;
 }
-.home > .home-content > div > nav, .home > .home-content > div > div {
+.home > .home-content > div > nav,
+.home > .home-content > div > div {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -361,8 +373,18 @@ button {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
+
   align-items: start;
   justify-content: center;
+  position: relative;
+}
+.flexPromo{
+  display: flex !important;
+  flex-direction: row-reverse;
+
+}
+.flexPromo > div{
+  flex: 1;
 }
 .home > .home-content > div > main > label {
   font-family: "Montserrat", sans-serif;
@@ -418,7 +440,8 @@ button {
   color: #0f0f0f;
 }
 .home > .button-save:hover > div {
-  background: url("../../public/icons/icon-save-black.svg") center/cover no-repeat;
+  background: url("../../public/icons/icon-save-black.svg") center/cover
+    no-repeat;
 }
 .home > .button-save > div {
   background: url("../../public/icons/icon-save.svg") center/cover no-repeat;
@@ -438,7 +461,8 @@ button {
   color: #0f0f0f;
 }
 .home > .button-save-active > div {
-  background: url("../../public/icons/icon-save-black.svg") center/cover no-repeat;
+  background: url("../../public/icons/icon-save-black.svg") center/cover
+    no-repeat;
 }
 .home > .button-save-active > main {
   letter-spacing: 0%;
@@ -464,4 +488,4 @@ button {
   90% {
     content: "...";
   }
-}/*# sourceMappingURL=globalStyle.css.map */
+} /*# sourceMappingURL=globalStyle.css.map */
