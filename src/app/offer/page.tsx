@@ -39,7 +39,7 @@ export default function Offer() {
 
   const getItems = async (key: string) => {
     try {
-      const res = await apiClient(`/api/content?name=${key}`);
+      const res = await apiClient(`content?name=${key}`);
       console.log(res);
       const data = res.data.data;
       if (data) {

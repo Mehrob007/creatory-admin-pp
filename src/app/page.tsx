@@ -361,7 +361,7 @@ export default function Home() {
 
   const getItems = async (key: string) => {
     try {
-      const res = await apiClient(`/api/content?name=${key}`);
+      const res = await apiClient(`content?name=${key}`);
       console.log(res);
       const data = res.data.data;
       if (data) {
@@ -1381,9 +1381,7 @@ export default function Home() {
             <Textarea
               edit={false}
               id="schema_parking"
-              value={
-                "Ознакомиться со схемой"
-              }
+              value={"Ознакомиться со схемой"}
               onChange={(e) => setData("schema_parking", e)}
               // title="Видео"
               styleText={{
