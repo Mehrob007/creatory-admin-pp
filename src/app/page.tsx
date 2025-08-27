@@ -507,6 +507,8 @@ export default function Home() {
   useEffect(() => {
     if (data?.dataArrBox4_1) {
       setDataArrBox4_1(JSON.parse(data?.dataArrBox4_1 as string));
+    } else {
+      setData("dataArrBox4_1", JSON.stringify(dataArrBox4_1));
     }
   }, [data]);
 
@@ -1074,17 +1076,6 @@ export default function Home() {
                       <div className="content-top-box4_1-1-com-1" key={i}>
                         {prev.content.map((e, i) => (
                           <div key={i}>
-                            {/* <h1>{e.title}</h1>
-                            <p>
-                              {e.price}{" "}
-                              <span
-                                style={{
-                                  fontFamily: `"Segoe UI Variable", "Segoe UI", sans-serif`,
-                                }}
-                              >
-                                ₽
-                              </span>
-                            </p> */}
                             <InputPages
                               id={`${e.title}_${i}`}
                               onChange={(el) =>
