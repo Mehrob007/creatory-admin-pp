@@ -622,7 +622,7 @@ export default function Home() {
               onChange={() => {}}
               // title="Видео"
               styleText={{
-                fontSize: "18px",
+                fontSize: "14px",
                 height: "60px",
                 textTransform: "uppercase",
                 paddingBottom: "10px",
