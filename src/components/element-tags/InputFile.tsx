@@ -14,7 +14,9 @@ export default function InputFile({ id, onChange }: InputFile) {
 
   const sendReq = async (e: React.ChangeEvent<HTMLInputElement>) => {
     setLoading(true);
-    const { res, data } = await onChange(id, e);
+    const resData = await onChange(id, e);
+    if (!resData) return;
+    const { res, data } = resData;
     console.log("file", res);
     setNameFile(data);
     setLoading(!res);
@@ -22,7 +24,9 @@ export default function InputFile({ id, onChange }: InputFile) {
 
   useEffect(() => {
     const getFile = async () => {
-      const { data } = await onChange(id);
+      const resData = await onChange(id);
+      if (!resData) return;
+      const { data } = resData;
       setNameFile(data);
     };
     getFile();
