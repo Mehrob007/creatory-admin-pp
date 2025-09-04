@@ -361,7 +361,7 @@ export default function Home() {
 
   const getItems = async (key: string) => {
     try {
-      const res = await apiClient(`content?name=${key}`);
+      const res = await apiClient(`api/content?name=${key}`);
       console.log(res);
       const data = res.data.data;
       if (data) {
@@ -1393,6 +1393,48 @@ export default function Home() {
             />
             <InputFile id="schema_parking" onChange={onChangeFile} />
           </main>
+          <nav>
+            <Textarea
+              id="box_mid_1_title_list_5"
+              value={data.box_mid_1_title_list_5 as string}
+              onChange={(e) => setData("box_mid_1_title_list_5", e)}
+              errors={errors}
+              styleText={{ fontSize: "18px", height: "50px" }}
+            />
+            <Textarea
+              id="box_mid_1_content_list_6"
+              value={data.box_mid_1_content_list_6 as string}
+              onChange={(e) => setData("box_mid_1_content_list_6", e)}
+              errors={errors}
+              styleText={{
+                fontSize: "14px",
+                height: "47px",
+                textAlign: "start",
+              }}
+              listMode={true}
+            />
+          </nav>
+          <nav>
+            <Textarea
+              id="box_mid_1_title_list_7"
+              value={data.box_mid_1_title_list_7 as string}
+              onChange={(e) => setData("box_mid_1_title_list_7", e)}
+              errors={errors}
+              styleText={{ fontSize: "18px", height: "50px" }}
+            />
+            <Textarea
+              id="box_mid_1_content_list_8"
+              value={data.box_mid_1_content_list_8 as string}
+              onChange={(e) => setData("box_mid_1_content_list_8", e)}
+              errors={errors}
+              styleText={{
+                fontSize: "14px",
+                height: "47px",
+                textAlign: "start",
+              }}
+              listMode={true}
+            />
+          </nav>
         </div>
         <div>
           <Textarea
