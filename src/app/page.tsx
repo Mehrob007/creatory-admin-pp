@@ -413,16 +413,16 @@ export default function Home() {
       );
       setData(
         "dataArrBox4_1",
-        // JSON.stringify(
-        //   dataArrBox4_1.map((e) => {
-        //     if (e.id === selection) {
-        //       return { ...e, subContent: subContent };
-        //     } else {
-        //       return e;
-        //     }
-        //   }),
-        // ),
-        "test"
+        JSON.stringify(
+          dataArrBox4_1.map((e) => {
+            if (e.id === selection) {
+              return { ...e, subContent: subContent };
+            } else {
+              return e;
+            }
+          })
+        )
+        // JSON.stringify(dataArrBox4_1)
       );
     } else {
       const content = dataArrBox4_1
@@ -491,7 +491,7 @@ export default function Home() {
       value: "test",
     };
     try {
-      const res = await apiClient.post("/api/content", dataItem);
+      const res = await apiClient?.post("/api/content", dataItem);
       console.log("res", res);
     } catch (e) {
       console.error("Error with key:", e);
@@ -505,15 +505,29 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
-    if (data?.dataArrBox4_1) {
-      setDataArrBox4_1(JSON.parse(data?.dataArrBox4_1 as string));
+    if (typeof data?.dataArrBox4_1 === "string") {
+      try {
+        const parsed = JSON.parse(data.dataArrBox4_1);
+        setDataArrBox4_1(parsed);
+      } catch (err) {
+        console.error(
+          "Ошибка парсинга dataArrBox4_1:",
+          data.dataArrBox4_1,
+          err
+        );
+      }
     } else {
       setData("dataArrBox4_1", JSON.stringify(dataArrBox4_1));
     }
   }, [data]);
 
   console.log("data", data);
-  console.log("dataArrBox4_1", dataArrBox4_1);
+  console.log(
+    "dataArrBox4_1",
+    dataArrBox4_1.filter((e) => e.id === selection)
+  );
+
+  console.log("haveKeys", haveKeys);
 
   return (
     <div className="home">
@@ -1072,64 +1086,66 @@ export default function Home() {
                 dataArrBox4_1
                   .filter((e) => e.id === selection)
                   .map((prev, i) => (
-                    <>
-                      <div className="content-top-box4_1-1-com-1" key={i}>
-                        {prev.content.map((e, i) => (
-                          <div key={i}>
+                    <div className="content-top-box4_1-1-com-1" key={i}>
+                      {prev.content.map((e, i) => (
+                        <div key={i}>
+                          <InputPages
+                            id={`${e.title}_${i}`}
+                            onChange={(el) =>
+                              onChangeBox4_1("title", el, i, "content")
+                            }
+                            value={e.title}
+                          />
+                          <InputPages
+                            id={`${e.title}_${i}_${e.price}`}
+                            onChange={(el) =>
+                              onChangeBox4_1("price", el, i, "content")
+                            }
+                            value={e.price}
+                          />
+                        </div>
+                      ))}
+                    </div>
+                  ))}
+              {dataArrBox4_1?.length &&
+                dataArrBox4_1
+                  .filter((e) => e.id === selection)
+                  .map((prev, i) => (
+                    <div className="content-top-box4_1-1-com-2" key={i + 2}>
+                      {prev.subContent.map((e, i) => (
+                        <div
+                          key={i}
+                          className={`content-top-box4_1-1-com-2-${i + 1}`}
+                        >
+                          <div>
                             <InputPages
                               id={`${e.title}_${i}`}
                               onChange={(el) =>
-                                onChangeBox4_1("title", el, i, "content")
+                                onChangeBox4_1(
+                                  "title",
+                                  el as string,
+                                  i,
+                                  "subContent"
+                                )
                               }
                               value={e.title}
                             />
                             <InputPages
                               id={`${e.title}_${i}_${e.price}`}
                               onChange={(el) =>
-                                onChangeBox4_1("price", el, i, "content")
+                                onChangeBox4_1(
+                                  "price",
+                                  el as string,
+                                  i,
+                                  "subContent"
+                                )
                               }
                               value={e.price}
                             />
                           </div>
-                        ))}
-                      </div>
-                      <div className="content-top-box4_1-1-com-2">
-                        {prev.subContent.map((e, i) => (
-                          <div
-                            key={i}
-                            className={`content-top-box4_1-1-com-2-${i + 1}`}
-                          >
-                            <div>
-                              <InputPages
-                                id={`${e.title}_${i}`}
-                                onChange={(el) =>
-                                  onChangeBox4_1("title", el, i, "subContent")
-                                }
-                                value={e.title}
-                              />
-                              <InputPages
-                                id={`${e.title}_${i}_${e.price}`}
-                                onChange={(el) =>
-                                  onChangeBox4_1("price", el, i, "subContent")
-                                }
-                                value={e.price}
-                              />
-                              {/* <h1>{e.title}</h1>
-                            <p>
-                              {e.price}{" "}
-                              <span
-                                style={{
-                                  fontFamily: `"Segoe UI Variable", "Segoe UI", sans-serif`,
-                                }}
-                              >
-                                ₽
-                              </span>
-                            </p> */}
-                            </div>
-                          </div>
-                        ))}
-                      </div>
-                    </>
+                        </div>
+                      ))}
+                    </div>
                   ))}
             </div>
           </div>
