@@ -1550,6 +1550,23 @@ export default function Home() {
           </main>
           <main style={{ gridTemplateColumns: "1fr 207px" }}>
             <Textarea
+              value={"Зоны Queen Elizabeth Park Tower (R2)"}
+              edit={false}
+              id="file_content_title_3_2"
+              onChange={(e) => setData("file_content_title_3_2", e)}
+              // title="Видео"
+              styleText={{
+                fontSize: "14px",
+                height: "60px",
+                paddingBottom: "10px",
+                paddingTop: "20px",
+              }}
+              textInfo="*Сейчас загружен файл: |#59E991&Прайс-лист на услуги мойки.pdf"
+            />
+            <InputFile id="file_content_3_2" onChange={onChangeFile} />
+          </main>
+          <main style={{ gridTemplateColumns: "1fr 207px" }}>
+            <Textarea
               edit={false}
               id="file_content_title_4"
               value={"Зоны Central Park Tower (R7)"}
