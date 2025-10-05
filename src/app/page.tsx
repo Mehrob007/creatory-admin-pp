@@ -1409,6 +1409,36 @@ export default function Home() {
             />
             <InputFile id="schema_parking" onChange={onChangeFile} />
           </main>
+          <div className="content-top-box4_1-1-com-2">
+            <div className={`content-top-box4_1-1-com-2-1`}>
+              <div>
+                <InputPages
+                  id={`ab_1_title`}
+                  onChange={(e) => setData("ab_1_title", e)}
+                  value={data.ab_1_title as string}
+                />
+                <InputPages
+                  id={`ab_1_price`}
+                  onChange={(e) => setData("ab_1_price", e)}
+                  value={data.ab_1_price as string}
+                />
+              </div>
+            </div>
+            <div className={`content-top-box4_1-1-com-2-2`}>
+              <div>
+                <InputPages
+                  id={`ab_2_title`}
+                  onChange={(e) => setData("ab_2_title", e)}
+                  value={data.ab_2_title as string}
+                />
+                <InputPages
+                  id={`ab_2_price`}
+                  onChange={(e) => setData("ab_2_price", e)}
+                  value={data.ab_2_price as string}
+                />
+              </div>
+            </div>
+          </div>
           <nav>
             <Textarea
               id="box_mid_1_title_list_5"
