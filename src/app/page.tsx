@@ -954,6 +954,32 @@ export default function Home() {
           />
           <nav>
             <Textarea
+              id="list_title_VALET"
+              value={data.list_title_VALET as string}
+              onChange={(e) => setData("list_title_VALET", e)}
+              errors={errors}
+              styleText={{ fontSize: "14px", height: "35px" }}
+            />
+          </nav>
+          <main style={{ gridTemplateColumns: "1fr 207px" }}>
+            <Textarea
+              edit={false}
+              id="list_file_VALET"
+              value={"Valet+ Условия использования"}
+              onChange={(e) => setData("list_file_VALET", e)}
+              // title="Видео"
+              styleText={{
+                fontSize: "14px",
+                height: "60px",
+                paddingBottom: "10px",
+                paddingTop: "20px",
+              }}
+              textInfo="*Сейчас загружен файл: |#59E991&Прайс-лист на услуги мойки.pdf"
+            />
+            <InputFile id="list_file_VALET" onChange={onChangeFile} />
+          </main>
+          <nav>
+            <Textarea
               id="list_1_title"
               value={data.list_1_title as string}
               onChange={(e) => setData("list_1_title", e)}
@@ -1276,6 +1302,32 @@ export default function Home() {
             errors={errors}
             styleText={{ fontSize: "18px", height: "50px" }}
           /> */}
+          <nav>
+            <Textarea
+              id="list_title_PRIVATE"
+              value={data.list_title_PRIVATE as string}
+              onChange={(e) => setData("list_title_PRIVATE", e)}
+              errors={errors}
+              styleText={{ fontSize: "14px", height: "35px" }}
+            />
+          </nav>
+          <main style={{ gridTemplateColumns: "1fr 207px" }}>
+            <Textarea
+              edit={false}
+              id="list_file_PRIVATE"
+              value={"PRIVATE+ Условия использования"}
+              onChange={(e) => setData("list_file_PRIVATE", e)}
+              // title="Видео"
+              styleText={{
+                fontSize: "14px",
+                height: "60px",
+                paddingBottom: "10px",
+                paddingTop: "20px",
+              }}
+              textInfo="*Сейчас загружен файл: |#59E991&Прайс-лист на услуги мойки.pdf"
+            />
+            <InputFile id="list_file_PRIVATE" onChange={onChangeFile} />
+          </main>
           <nav>
             <Textarea
               id="list_4_title"

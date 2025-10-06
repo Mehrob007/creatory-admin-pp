@@ -93,6 +93,8 @@ export const arrKeys = [
   "ab_1_price",
   "ab_2_title",
   "ab_2_price",
+  "list_title_VALET",
+  "list_title_PRIVATE",
   "box_mid_1_content_list_8",
   "box_mid_2_content_1",
   "box_mid_2_content_2",
