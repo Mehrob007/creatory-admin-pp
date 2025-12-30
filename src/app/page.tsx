@@ -907,6 +907,14 @@ export default function Home() {
               styleText={{ fontSize: "14px", height: "47px" }}
             />
             <Textarea
+              id="box4_content_38"
+              value={data.box4_content_38 as string}
+              onChange={(e) => setData("box4_content_38", e)}
+              errors={errors}
+              // title="Главный баннер"
+              styleText={{ fontSize: "14px", height: "47px" }}
+            />
+            <Textarea
               id="box4_content_32"
               value={data.box4_content_32 as string}
               onChange={(e) => setData("box4_content_32", e)}
@@ -1536,11 +1544,112 @@ export default function Home() {
         </div>
         <div>
           <Textarea
+            id="box_mid_1_1_content_1"
+            value={data.box_mid_1_1_content_1 as string}
+            onChange={(e) => setData("box_mid_1_1_content_1", e)}
+            errors={errors}
+            title="Блок №6"
+            styleText={{ fontSize: "28px", height: "60px" }}
+          />
+          <Textarea
+            id="box_mid_1_1_content_2"
+            value={data.box_mid_1_1_content_2 as string}
+            onChange={(e) => setData("box_mid_1_1_content_2", e)}
+            errors={errors}
+            // title="Блок №3"
+            styleText={{ fontSize: "18px", height: "50px" }}
+          />
+          <Textarea
+            id="box_mid_1_1_content_3"
+            value={data.box_mid_1_1_content_3 as string}
+            onChange={(e) => setData("box_mid_1_1_content_3", e)}
+            errors={errors}
+            // title="Блок №3"
+            styleText={{ fontSize: "18px", height: "50px" }}
+          />
+          <Textarea
+            id="box_mid_1_1_content_4"
+            value={data.box_mid_1_1_content_4 as string}
+            onChange={(e) => setData("box_mid_1_1_content_4", e)}
+            errors={errors}
+            // title="Блок №3"
+            styleText={{ fontSize: "18px", height: "50px" }}
+          />
+          <Textarea
+            id="box_mid_1_1_content_5"
+            value={data.box_mid_1_1_content_5 as string}
+            onChange={(e) => setData("box_mid_1_1_content_5", e)}
+            errors={errors}
+            // title="Блок №3"
+            styleText={{ fontSize: "18px", height: "50px" }}
+          />
+          <Textarea
+            id="box_mid_1_1_content_6"
+            value={data.box_mid_1_1_content_6 as string}
+            onChange={(e) => setData("box_mid_1_1_content_6", e)}
+            errors={errors}
+            // title="Блок №3"
+            styleText={{ fontSize: "18px", height: "50px" }}
+          />
+          <Textarea
+            id="box_mid_1_1_content_7"
+            value={data.box_mid_1_1_content_7 as string}
+            onChange={(e) => setData("box_mid_1_1_content_7", e)}
+            errors={errors}
+            // title="Блок №3"
+            styleText={{ fontSize: "18px", height: "50px" }}
+          />
+
+          <nav>
+            <Textarea
+              id="box_mid_1_1_title_list_5"
+              value={data.box_mid_1_1_title_list_5 as string}
+              onChange={(e) => setData("box_mid_1_1_title_list_5", e)}
+              errors={errors}
+              styleText={{ fontSize: "18px", height: "50px" }}
+            />
+            <Textarea
+              id="box_mid_1_1_content_list_6"
+              value={data.box_mid_1_1_content_list_6 as string}
+              onChange={(e) => setData("box_mid_1_1_content_list_6", e)}
+              errors={errors}
+              styleText={{
+                fontSize: "14px",
+                height: "47px",
+                textAlign: "start",
+              }}
+              listMode={true}
+            />
+          </nav>
+          <nav>
+            <Textarea
+              id="box_mid_1_1_title_list_7"
+              value={data.box_mid_1_1_title_list_7 as string}
+              onChange={(e) => setData("box_mid_1_1_title_list_7", e)}
+              errors={errors}
+              styleText={{ fontSize: "18px", height: "50px" }}
+            />
+            <Textarea
+              id="box_mid_1_1_content_list_8"
+              value={data.box_mid_1_1_content_list_8 as string}
+              onChange={(e) => setData("box_mid_1_1_content_list_8", e)}
+              errors={errors}
+              styleText={{
+                fontSize: "14px",
+                height: "47px",
+                textAlign: "start",
+              }}
+              listMode={true}
+            />
+          </nav>
+        </div>
+        <div>
+          <Textarea
             id="box_mid_2_content_1"
             value={data.box_mid_2_content_1 as string}
             onChange={(e) => setData("box_mid_2_content_1", e)}
             errors={errors}
-            title="Блок №6"
+            title="Блок №7"
             styleText={{ fontSize: "28px", height: "60px" }}
           />
           <Textarea
@@ -1671,7 +1780,7 @@ export default function Home() {
             value={data.box_mid_2_1_content_1 as string}
             onChange={(e) => setData("box_mid_2_1_content_1", e)}
             errors={errors}
-            title="Блок №7"
+            title="Блок №8"
             styleText={{ fontSize: "28px", height: "60px" }}
           />
           <Textarea
@@ -1696,7 +1805,7 @@ export default function Home() {
             value={data.box5_content_1 as string}
             onChange={(e) => setData("box5_content_1", e)}
             errors={errors}
-            title="Блок №8"
+            title="Блок №9"
             styleText={{ fontSize: "28px", height: "60px" }}
           />
           <main>
