@@ -60,7 +60,7 @@ export default function Offer() {
   };
   const onChangeFile = async (
     key: string,
-    e?: React.ChangeEvent<HTMLInputElement>
+    e?: React.ChangeEvent<HTMLInputElement>,
   ): Promise<false | { res: boolean; data: string }> => {
     try {
       const data = new FormData();
@@ -207,7 +207,7 @@ export default function Offer() {
             <Textarea
               value={"БОЛЕЕ СТАРЫЕ ВЕРСИИ"}
               edit={false}
-              id="offer_file_content_title_6"
+              id="offer_file_content_title_6" 
               onChange={(e) => setData("offer_file_content_title_6", e)}
               // title="Видео"
               styleText={{
@@ -219,6 +219,47 @@ export default function Offer() {
               textInfo="*Сейчас загружен файл: |#59E991&Прайс-лист на услуги мойки.pdf"
             />
             <InputFile id="offer_file_content_6" onChange={onChangeFile} />
+          </main>
+          <Textarea
+            id="offer_content_5"
+            value={data.offer_content_5 as string}
+            onChange={(e) => setData("offer_content_5", e)}
+            errors={errors}
+            styleText={{ fontSize: "18px", height: "50px" }}
+          />
+          <main style={{ gridTemplateColumns: "1fr 207px" }}>
+            <Textarea
+              value={"НОВАЯ ВЕРСИЯ"}
+              edit={false}
+              id="offer_file_content_title_7"
+              onChange={(e) => setData("offer_file_content_title_7", e)}
+              // title="Видео"
+              styleText={{
+                fontSize: "18px",
+                height: "60px",
+                paddingBottom: "10px",
+                paddingTop: "18px",
+              }}
+              textInfo="*Сейчас загружен файл: |#59E991&Прайс-лист на услуги мойки.pdf"
+            />
+            <InputFile id="offer_file_content_7" onChange={onChangeFile} />
+          </main>
+          <main style={{ gridTemplateColumns: "1fr 207px" }}>
+            <Textarea
+              value={"БОЛЕЕ СТАРЫЕ ВЕРСИИ"}
+              edit={false}
+              id="offer_file_content_title_8"
+              onChange={(e) => setData("offer_file_content_title_8", e)}
+              // title="Видео"
+              styleText={{
+                fontSize: "18px",
+                height: "60px",
+                paddingBottom: "10px",
+                paddingTop: "18px",
+              }}
+              textInfo="*Сейчас загружен файл: |#59E991&Прайс-лист на услуги мойки.pdf"
+            />
+            <InputFile id="offer_file_content_8" onChange={onChangeFile} />
           </main>
         </div>
       </div>
