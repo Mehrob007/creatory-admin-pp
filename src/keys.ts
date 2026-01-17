@@ -134,4 +134,5 @@ export const arrKeysOffer = [
   "offer_content_2",
   "offer_content_3",
   "offer_content_4",
+  "offer_content_5",
 ];
