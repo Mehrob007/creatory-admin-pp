@@ -14,8 +14,8 @@ apiClient.interceptors.request.use(
   (config) => {
     if (
       typeof window !== "undefined" &&
-      window.localStorage
-      // typeof window.localStorage.getItem === "function"
+      window.localStorage &&
+      typeof window.localStorage.getItem === "function"
     ) {
       const token = localStorage.getItem("token");
       if (token) {
@@ -24,7 +24,7 @@ apiClient.interceptors.request.use(
     }
     return config;
   },
-  (error) => Promise.reject(error)
+  (error) => Promise.reject(error),
 );
 apiClient.interceptors.response.use(
   (response) => response,
@@ -42,5 +42,5 @@ apiClient.interceptors.response.use(
       }
     }
     return Promise.reject(error);
-  }
+  },
 );
