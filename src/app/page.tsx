@@ -388,7 +388,7 @@ export default function Home() {
     key: string,
     value: string,
     i: number,
-    params: string
+    params: string,
   ) => {
     if (params === "subContent") {
       const subContent = dataArrBox4_1
@@ -409,7 +409,7 @@ export default function Home() {
           } else {
             return e;
           }
-        })
+        }),
       );
       setData(
         "dataArrBox4_1",
@@ -420,8 +420,8 @@ export default function Home() {
             } else {
               return e;
             }
-          })
-        )
+          }),
+        ),
         // JSON.stringify(dataArrBox4_1)
       );
     } else {
@@ -443,7 +443,7 @@ export default function Home() {
           } else {
             return e;
           }
-        })
+        }),
       );
       setData(
         "dataArrBox4_1",
@@ -454,15 +454,15 @@ export default function Home() {
             } else {
               return e;
             }
-          })
-        )
+          }),
+        ),
       );
     }
   };
 
   const onChangeFile = async (
     key: string,
-    e?: React.ChangeEvent<HTMLInputElement>
+    e?: React.ChangeEvent<HTMLInputElement>,
   ): Promise<false | { res: boolean; data: string }> => {
     try {
       const data = new FormData();
@@ -513,7 +513,7 @@ export default function Home() {
         console.error(
           "Ошибка парсинга dataArrBox4_1:",
           data.dataArrBox4_1,
-          err
+          err,
         );
       }
     } else {
@@ -524,7 +524,7 @@ export default function Home() {
   console.log("data", data);
   console.log(
     "dataArrBox4_1",
-    dataArrBox4_1.filter((e) => e.id === selection)
+    dataArrBox4_1.filter((e) => e.id === selection),
   );
 
   console.log("haveKeys", haveKeys);
@@ -1159,7 +1159,7 @@ export default function Home() {
                                   "title",
                                   el as string,
                                   i,
-                                  "subContent"
+                                  "subContent",
                                 )
                               }
                               value={e.title}
@@ -1171,7 +1171,7 @@ export default function Home() {
                                   "price",
                                   el as string,
                                   i,
-                                  "subContent"
+                                  "subContent",
                                 )
                               }
                               value={e.price}
@@ -1265,6 +1265,13 @@ export default function Home() {
               styleText={{ fontSize: "14px", height: "47px" }}
             />
             <Textarea
+              id="box4_1_content_15"
+              value={data.box4_1_content_15 as string}
+              onChange={(e) => setData("box4_1_content_15", e)}
+              errors={errors}
+              styleText={{ fontSize: "14px", height: "47px" }}
+            />
+            <Textarea
               id="box4_1_content_11"
               value={data.box4_1_content_11 as string}
               onChange={(e) => setData("box4_1_content_11", e)}
@@ -1297,13 +1304,6 @@ export default function Home() {
             styleText={{ fontSize: "14px", height: "47px" }}
           />
           {/* <Textarea
-            id="box4_1_content_15"
-            value={data.box4_1_content_15 as string}
-            onChange={(e) => setData("box4_1_content_15", e)}
-            errors={errors}
-            styleText={{ fontSize: "28px", height: "60px" }}
-          />
-          <Textarea
             id="box4_1_content_16"
             value={data.box4_1_content_16 as string}
             onChange={(e) => setData("box4_1_content_16", e)}
@@ -1482,6 +1482,13 @@ export default function Home() {
                   onChange={(e) => setData("ab_1_price", e)}
                   value={data.ab_1_price as string}
                 />
+                <Textarea
+                  id="ab_1_footer"
+                  value={data.ab_1_footer as string}
+                  onChange={(e) => setData("ab_1_footer", e)}
+                  errors={errors}
+                  styleText={{ fontSize: "12px", height: "50px" }}
+                />
               </div>
             </div>
             <div className={`content-top-box4_1-1-com-2-2`}>
@@ -1495,6 +1502,34 @@ export default function Home() {
                   id={`ab_2_price`}
                   onChange={(e) => setData("ab_2_price", e)}
                   value={data.ab_2_price as string}
+                />
+                <Textarea
+                  id="ab_2_footer"
+                  value={data.ab_2_footer as string}
+                  onChange={(e) => setData("ab_2_footer", e)}
+                  errors={errors}
+                  styleText={{ fontSize: "12px", height: "50px" }}
+                />
+              </div>
+            </div>
+            <div className={`content-top-box4_1-1-com-2-2`}>
+              <div>
+                <InputPages
+                  id={`ab_3_title`}
+                  onChange={(e) => setData("ab_3_title", e)}
+                  value={data.ab_3_title as string}
+                />
+                <InputPages
+                  id={`ab_3_price`}
+                  onChange={(e) => setData("ab_3_price", e)}
+                  value={data.ab_3_price as string}
+                />
+                <Textarea
+                  id="ab_3_footer"
+                  value={data.ab_3_footer as string}
+                  onChange={(e) => setData("ab_3_footer", e)}
+                  errors={errors}
+                  styleText={{ fontSize: "12px", height: "50px" }}
                 />
               </div>
             </div>
