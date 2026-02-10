@@ -12,6 +12,13 @@ export const apiClient = axios.create({
 });
 apiClient.interceptors.request.use(
   (config) => {
+    if (typeof window === "undefined") {
+      const source = axios.CancelToken.source();
+      config.cancelToken = source.token;
+      source.cancel("Client-side only request blocked on server.");
+      return config;
+    }
+
     if (
       typeof window !== "undefined" &&
       window.localStorage &&
