@@ -1491,7 +1491,7 @@ export default function Home() {
                 />
               </div>
             </div>
-            <div className={`content-top-box4_1-1-com-2-2`}>
+            {/* <div className={`content-top-box4_1-1-com-2-2`}>
               <div>
                 <InputPages
                   id={`ab_2_title`}
@@ -1511,7 +1511,7 @@ export default function Home() {
                   styleText={{ fontSize: "12px", height: "50px" }}
                 />
               </div>
-            </div>
+            </div> */}
             <div className={`content-top-box4_1-1-com-2-2`}>
               <div>
                 <InputPages
