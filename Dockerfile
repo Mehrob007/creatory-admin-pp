@@ -1,5 +1,5 @@
 # Build stage
-FROM node:18-alpine AS build
+FROM node:22-alpine AS build
 WORKDIR /app
 
 COPY package*.json ./
@@ -9,7 +9,7 @@ COPY . .
 RUN npm run build
 
 # Production stage
-FROM node:18-alpine AS runner
+FROM node:22-alpine AS runner
 WORKDIR /app
 
 ENV NODE_ENV=production
@@ -20,5 +20,5 @@ COPY --from=build /app/public ./public
 
 RUN npm install --omit=dev
 
-EXPOSE 3020
+EXPOSE 3002
 CMD ["npm", "start"]
