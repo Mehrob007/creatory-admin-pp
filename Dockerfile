@@ -20,5 +20,5 @@ COPY --from=build /app/public ./public
 
 RUN npm install --omit=dev
 
-EXPOSE 3002:80
+EXPOSE 3002
 CMD ["npm", "start"]
