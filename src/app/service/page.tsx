@@ -67,13 +67,13 @@ export default function Service() {
       data.append("key", key);
       data.append("file", e?.target?.files?.[0] as File);
       if (e?.target?.files?.[0]) {
-        const res = await apiClient.post("api/files", data);
+        const res = await apiClient.post("/files", data);
         return {
           res: !!res as boolean,
           data: res.data.data.fileName as string,
         };
       } else {
-        const res = await apiClient.get(`api/files?key=${key}`);
+        const res = await apiClient.get(`/files?key=${key}`);
         return { res: true, data: res.data.data.fileName as string };
       }
     } catch (e) {
